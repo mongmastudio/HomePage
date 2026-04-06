@@ -113,18 +113,22 @@ const ContactModal = ({ isOpen, onClose }) => {
                         📞 010-4656-5414
                     </div>
 
-                    <form onSubmit={(e) => { e.preventDefault(); alert("문의가 접수되었습니다!"); onClose(); }}>
+                    <form action="https://formsubmit.co/mongmastudio@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="[몽마스튜디오] 새로운 문의가 도착했습니다" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_next" value="https://mongma-studio.com" />
+                        <input type="hidden" name="_template" value="box" />
                         <div className="form-group">
                             <label>이름 / 기업명</label>
-                            <input type="text" className="form-control" placeholder="홍길동 / (주)게임회사" required />
+                            <input type="text" name="name" className="form-control" placeholder="홍길동 / (주)게임회사" required />
                         </div>
                         <div className="form-group">
                             <label>이메일</label>
-                            <input type="email" className="form-control" placeholder="example@email.com" required />
+                            <input type="email" name="email" className="form-control" placeholder="example@email.com" required />
                         </div>
                         <div className="form-group">
                             <label>문의 내용</label>
-                            <textarea className="form-control" placeholder="문의하실 내용을 자유롭게 적어주세요." required></textarea>
+                            <textarea name="message" className="form-control" placeholder="문의하실 내용을 자유롭게 적어주세요." required></textarea>
                         </div>
                         <button type="submit" className="submit-btn">보내기</button>
                     </form>
