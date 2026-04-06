@@ -101,7 +101,7 @@ const Navigation = () => (
         <ul className="nav-links">
             <li><a href="#vision">VISION</a></li>
             <li><a href="#why">WHY</a></li>
-            <li><a href="#tiers">TIERS</a></li>
+            <li><a href="#tiers">DONATE</a></li>
             <li><a href="#roadmap">ROADMAP</a></li>
         </ul>
         <a href="./index.html" className="nav-back">MAIN</a>
@@ -237,71 +237,89 @@ const WhySection = () => {
     );
 };
 
-const TiersSection = () => (
-    <section id="tiers" className="section tiers-section">
-        <motion.div {...fadeUp}>
-            <p className="section-label">SPONSORSHIP TIERS</p>
-        </motion.div>
-        <motion.h2 className="section-title" {...fadeUp}>
-            후원 등급
-        </motion.h2>
-        <motion.p className="section-desc" {...fadeUp}>
-            소중한 마음에 보답하기 위해 등급별 특별한 혜택을 준비했습니다.
-        </motion.p>
+const TiersSection = () => {
+    const [copied, setCopied] = useState(false);
 
-        <motion.div className="tiers-grid" {...staggerContainer}>
-            {/* Tier 1 */}
-            <motion.div className="tier-card" {...staggerItem}>
-                <span className="tier-emoji">&#x1F331;</span>
-                <h3 className="tier-name">서포터</h3>
-                <div className="tier-price">5,000원</div>
-                <div className="tier-period">월간 후원</div>
-                <div className="tier-divider"></div>
-                <ul className="tier-features">
-                    <li>후원자 전용 디스코드 채널 접근</li>
-                    <li>개발 진행 상황 주간 리포트</li>
-                    <li>게임 크레딧에 이름 등재</li>
-                    <li>후원자 전용 배경화면 제공</li>
-                </ul>
-                <button className="tier-btn">서포터 되기</button>
+    const copyAccount = () => {
+        navigator.clipboard.writeText('957-027667-04-019').then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        });
+    };
+
+    return (
+        <section id="tiers" className="section tiers-section">
+            <motion.div {...fadeUp}>
+                <p className="section-label">HOW TO SPONSOR</p>
+            </motion.div>
+            <motion.h2 className="section-title" {...fadeUp}>
+                후원 방법
+            </motion.h2>
+            <motion.p className="section-desc" {...fadeUp}>
+                아래 계좌로 원하시는 금액을 입금해 주시면 됩니다.<br />
+                후원 금액에 따라 등급이 자동으로 부여됩니다.
+            </motion.p>
+
+            <motion.div className="tiers-grid" style={{ gridTemplateColumns: '1fr' }} {...staggerContainer}>
+                {/* 입금 안내 카드 */}
+                <motion.div className="tier-card featured" {...staggerItem} style={{ maxWidth: '600px', margin: '0 auto', width: '100%' }}>
+                    <span className="tier-emoji">&#x1F3E6;</span>
+                    <h3 className="tier-name">후원 계좌 안내</h3>
+                    <div className="tier-divider" style={{ margin: '20px auto' }}></div>
+
+                    <div style={{ textAlign: 'left', padding: '0 10px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                            <span style={{ color: 'var(--text-color)', fontSize: '0.95rem' }}>은행</span>
+                            <span style={{ color: '#fff', fontWeight: 700, fontSize: '1.1rem' }}>IBK 기업은행</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                            <span style={{ color: 'var(--text-color)', fontSize: '0.95rem' }}>계좌번호</span>
+                            <span style={{ color: 'var(--accent-gold)', fontWeight: 800, fontSize: '1.2rem', letterSpacing: '1px' }}>957-027667-04-019</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 0' }}>
+                            <span style={{ color: 'var(--text-color)', fontSize: '0.95rem' }}>예금주</span>
+                            <span style={{ color: '#fff', fontWeight: 700, fontSize: '1.1rem' }}>주식회사몽마스튜디오</span>
+                        </div>
+                    </div>
+
+                    <button className="tier-btn" onClick={copyAccount} style={{ marginTop: '28px', background: copied ? 'rgba(102, 252, 241, 0.3)' : 'var(--accent-gold)', color: copied ? 'var(--primary-color)' : '#000', border: 'none' }}>
+                        {copied ? '복사 완료!' : '계좌번호 복사하기'}
+                    </button>
+                </motion.div>
             </motion.div>
 
-            {/* Tier 2 */}
-            <motion.div className="tier-card featured" {...staggerItem}>
-                <span className="tier-emoji">&#x2B50;</span>
-                <h3 className="tier-name">챔피언</h3>
-                <div className="tier-price">15,000원</div>
-                <div className="tier-period">월간 후원</div>
-                <div className="tier-divider"></div>
-                <ul className="tier-features">
-                    <li>서포터 등급의 모든 혜택</li>
-                    <li>신작 게임 얼리 액세스 제공</li>
-                    <li>월간 개발자 Q&A 세션 참여</li>
-                    <li>미공개 컨셉아트 독점 공유</li>
-                    <li>인게임 후원자 전용 아이템</li>
-                </ul>
-                <button className="tier-btn">챔피언 되기</button>
-            </motion.div>
+            {/* 등급 안내 */}
+            <motion.div {...fadeUp} style={{ marginTop: '60px', maxWidth: '700px', width: '100%' }}>
+                <p className="section-label" style={{ textAlign: 'center' }}>TIER SYSTEM</p>
+                <h3 style={{ textAlign: 'center', fontSize: '1.5rem', color: '#fff', marginBottom: '30px' }}>후원 금액별 자동 등급 부여</h3>
 
-            {/* Tier 3 */}
-            <motion.div className="tier-card" {...staggerItem}>
-                <span className="tier-emoji">&#x1F48E;</span>
-                <h3 className="tier-name">레전드</h3>
-                <div className="tier-price">30,000원</div>
-                <div className="tier-period">월간 후원</div>
-                <div className="tier-divider"></div>
-                <ul className="tier-features">
-                    <li>챔피언 등급의 모든 혜택</li>
-                    <li>베타 테스트 우선 참여권</li>
-                    <li>게임 내 NPC 이름 커스텀 권한</li>
-                    <li>개발팀과 1:1 미팅 기회 (분기별)</li>
-                    <li>한정판 실물 굿즈 배송</li>
-                </ul>
-                <button className="tier-btn">레전드 되기</button>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    <motion.div className="why-item" {...staggerItem}>
+                        <span className="why-number" style={{ color: 'var(--secondary-color)' }}>&#x1F331;</span>
+                        <div>
+                            <h4>서포터 <span style={{ color: 'var(--secondary-color)', fontWeight: 400, fontSize: '0.9rem' }}>— 5,000원 이상</span></h4>
+                            <p>후원자 전용 디스코드 채널 접근 / 주간 개발 리포트 / 크레딧 등재</p>
+                        </div>
+                    </motion.div>
+                    <motion.div className="why-item" {...staggerItem}>
+                        <span className="why-number" style={{ color: 'var(--accent-gold)' }}>&#x2B50;</span>
+                        <div>
+                            <h4>챔피언 <span style={{ color: 'var(--accent-gold)', fontWeight: 400, fontSize: '0.9rem' }}>— 15,000원 이상</span></h4>
+                            <p>서포터 혜택 + 얼리 액세스 / 개발자 Q&A / 미공개 컨셉아트 / 전용 인게임 아이템</p>
+                        </div>
+                    </motion.div>
+                    <motion.div className="why-item" {...staggerItem}>
+                        <span className="why-number" style={{ color: 'var(--accent-purple)' }}>&#x1F48E;</span>
+                        <div>
+                            <h4>레전드 <span style={{ color: 'var(--accent-purple)', fontWeight: 400, fontSize: '0.9rem' }}>— 30,000원 이상</span></h4>
+                            <p>챔피언 혜택 + 베타 테스트 우선권 / NPC 이름 커스텀 / 1:1 미팅 / 한정판 굿즈</p>
+                        </div>
+                    </motion.div>
+                </div>
             </motion.div>
-        </motion.div>
-    </section>
-);
+        </section>
+    );
+};
 
 const RoadmapSection = () => {
     const milestones = [
