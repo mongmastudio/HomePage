@@ -172,6 +172,9 @@ const App = () => {
                         <button className="btn btn-contact" onClick={() => setIsModalOpen(true)}>
                             문의하기
                         </button>
+                        <button className="btn btn-home" onClick={() => window.location.href = './sponsor.html'}>
+                            후원하기
+                        </button>
                     </div>
                 </motion.div>
             </section>
