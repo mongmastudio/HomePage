@@ -1,0 +1,80 @@
+/* ─────────────────────────────────────────────────────────────
+   MONGMA STUDIO — responsive media queries
+   Verbatim breakpoints from reference/Mongma Studio.html:
+     1024px  · nav collapses to mobile burger
+     900px   · most layouts collapse to 1 or 2 columns
+     760px   · contact-grid + support-options → 1 column
+     560px   · final collapse to 1 column for the rest
+   ───────────────────────────────────────────────────────────── */
+
+/* ──── nav ──── */
+@media (max-width: 1024px){
+  .nav-links{display:none}
+  .nav-burger{display:inline-flex}
+}
+
+/* ──── hero ──── */
+@media (max-width: 900px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-collage{height:430px}
+}
+
+/* ──── studio intro ──── */
+@media (max-width:900px){.studio-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.studio-grid{grid-template-columns:1fr}}
+
+/* ──── featured revenant ──── */
+@media (max-width:900px){.fr-grid{grid-template-columns:1fr}}
+
+/* ──── future games roadmap ──── */
+@media (max-width:900px){.roadmap{grid-template-columns:1fr}}
+
+/* ──── news ──── */
+@media (max-width:900px){.news-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.news-grid{grid-template-columns:1fr}}
+
+/* ──── community ──── */
+@media (max-width:900px){.community{grid-template-columns:1fr}.community-list a{flex-basis:100%;border-right:0}}
+
+/* ──── contact CTA ──── */
+@media (max-width:900px){.contact-cta .wrap{grid-template-columns:1fr}}
+
+/* ──── footer ──── */
+@media (max-width:900px){footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){footer .wrap{grid-template-columns:1fr}}
+
+/* ──── games list ──── */
+@media (max-width:900px){.games-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.games-grid{grid-template-columns:1fr}}
+
+/* ──── revenant overview ──── */
+@media (max-width:900px){.rev-overview{grid-template-columns:1fr}}
+
+/* ──── revenant features ──── */
+@media (max-width:900px){.feat-grid{grid-template-columns:1fr 1fr}.feat:nth-child(4n){border-right:1px solid var(--rev-rule)}.feat:nth-child(2n){border-right:0}}
+@media (max-width:560px){.feat-grid{grid-template-columns:1fr}.feat{border-right:0!important}}
+
+/* ──── revenant gallery ──── */
+@media (max-width:900px){.gallery{grid-template-columns:1fr 1fr}.gallery .gtile.large{grid-column:span 2;grid-row:span 1}}
+
+/* ──── press factsheet ──── */
+@media (max-width:900px){.factsheet{grid-template-columns:1fr}}
+
+/* ──── press downloads ──── */
+@media (max-width:900px){.dl-grid{grid-template-columns:1fr 1fr}.dl:nth-child(3n){border-right:1px solid var(--ink)}.dl:nth-child(2n){border-right:0}}
+@media (max-width:560px){.dl-grid{grid-template-columns:1fr}.dl{border-right:0!important}}
+
+/* ──── contact grid ──── */
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr}.contact-block{border-right:0!important}}
+
+/* ──── support why ──── */
+@media (max-width:900px){.why-grid{grid-template-columns:1fr 1fr}.why:nth-child(4n){border-right:1px solid var(--ink)}.why:nth-child(2n){border-right:0}}
+@media (max-width:560px){.why-grid{grid-template-columns:1fr}.why{border-right:0!important}}
+
+/* ──── support options ──── */
+@media (max-width:760px){.support-options{grid-template-columns:1fr}}
+
+/* ──── generic two/three col ──── */
+@media (max-width:900px){.two-col{grid-template-columns:1fr}}
+@media (max-width:900px){.three-col{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.three-col{grid-template-columns:1fr}}

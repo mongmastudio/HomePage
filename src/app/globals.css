@@ -1,0 +1,15 @@
+/*
+  Imports the Mongma Studio Golden Master styles, broken into the layers
+  required by the prompt:
+    1. tokens.css       — design tokens (CSS variables)
+    2. golden-master.css — visual styles extracted from the original HTML
+    3. animations.css   — keyframes + scroll-reveal + reduced-motion
+    4. responsive.css   — media queries
+
+  All values are preserved verbatim from the original Mongma Studio.html.
+*/
+
+@import "../styles/tokens.css";
+@import "../styles/golden-master.css";
+@import "../styles/animations.css";
+@import "../styles/responsive.css";

@@ -1,0 +1,36 @@
+/* ─────────────────────────────────────────────────────────────
+   MONGMA STUDIO — design tokens
+   Paper / ink studio base + Revenant crimson scope
+
+   Verbatim from reference/Mongma Studio.html (no value normalization).
+   ───────────────────────────────────────────────────────────── */
+:root{
+  --paper:        #f3eee2;
+  --paper-2:      #ece6d6;
+  --paper-edge:   #e3dcc8;
+  --ink:          #181612;
+  --ink-2:        #2c2822;
+  --ink-soft:     #514a3f;
+  --ink-mute:     #8a8275;
+  --rule:         #d6cdb6;
+
+  --violet:       #6e5aa3;
+  --yellow:       #e8c757;
+  --red:          #b04e3a;
+  --blue:         #6a90c2;
+  --green:        #7a9a6e;
+
+  --rev-bg:       #0e0a0a;
+  --rev-bg-2:     #170c0c;
+  --rev-ink:      #f0e4dc;
+  --rev-rule:     #3a1e1e;
+  --rev-red:      #c8331a;
+  --rev-red-2:    #7a1e10;
+
+  --max:          1320px;
+  --gutter:       clamp(20px, 4vw, 56px);
+
+  --f-display:    'Instrument Serif', 'Gowun Batang', 'Noto Serif SC', Georgia, serif;
+  --f-body:       'DM Sans', 'Gowun Dodum', 'Noto Sans SC', system-ui, sans-serif;
+  --f-mono:       'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
