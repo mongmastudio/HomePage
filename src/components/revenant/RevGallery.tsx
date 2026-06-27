@@ -3,6 +3,12 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import { useReveal } from "@/components/common/Reveal";
+import { useLanguage } from "@/components/common/LanguageProvider";
+
+const galleryCopy = {
+  screenshot: { ko: "스크린샷 · ", en: "Screenshot · ", zh: "截图 · " },
+  altFallback: { ko: "갤러리 이미지", en: "Gallery image", zh: "图库图片" },
+};
 
 type Tile = {
   large?: boolean;
@@ -25,9 +31,11 @@ function pad(n: number): string {
 
 export default function RevGallery({ id, tiles, gridStyle }: Props) {
   const ref = useReveal<HTMLDivElement>();
+  const { tr } = useLanguage();
+  const fallbackLabel = (i: number) => `${tr(galleryCopy.screenshot)}${pad(i + 1)}`;
   const items = tiles.map((t, i) => ({
     src: t.src ?? null,
-    label: t.label ?? `Screenshot · ${pad(i + 1)}`,
+    label: t.label ?? fallbackLabel(i),
   }));
 
   return (
@@ -58,12 +66,12 @@ export default function RevGallery({ id, tiles, gridStyle }: Props) {
             {t.src ? (
               <Image
                 src={t.src}
-                alt={t.label ?? "Gallery image"}
+                alt={t.label ?? tr(galleryCopy.altFallback)}
                 width={1920}
                 height={1080}
               />
             ) : (
-              <span>{t.label}</span>
+              <span>{t.label ?? fallbackLabel(i)}</span>
             )}
           </div>
         );

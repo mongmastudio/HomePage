@@ -1,8 +1,19 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useLanguage } from "@/components/common/LanguageProvider";
 
 type Item = { src: string | null; label: string };
+
+const copy = {
+  viewer: { ko: "이미지 뷰어", en: "Image viewer", zh: "图片查看器" },
+  close: { ko: "닫기", en: "Close", zh: "关闭" },
+  closeLabel: { ko: "닫기 ✕", en: "Close ✕", zh: "关闭 ✕" },
+  prev: { ko: "이전", en: "Previous", zh: "上一张" },
+  prevLabel: { ko: "← 이전", en: "← Prev", zh: "← 上一张" },
+  next: { ko: "다음", en: "Next", zh: "下一张" },
+  nextLabel: { ko: "다음 →", en: "Next →", zh: "下一张 →" },
+};
 
 declare global {
   interface Window {
@@ -22,6 +33,7 @@ function pad(n: number): string {
   matching the original's global click delegation on `.gtile[data-lb]`.
 */
 export default function Lightbox() {
+  const { tr } = useLanguage();
   const [items, setItems] = useState<Item[]>([]);
   const [idx, setIdx] = useState(0);
   const [open, setOpen] = useState(false);
@@ -71,23 +83,23 @@ export default function Lightbox() {
       data-open={open ? "true" : "false"}
       role="dialog"
       aria-modal="true"
-      aria-label="Image viewer"
+      aria-label={tr(copy.viewer)}
       onClick={(e) => {
         if (e.target === e.currentTarget) close();
       }}
     >
-      <button className="lb-close" aria-label="Close" onClick={close}>
-        Close ✕
+      <button className="lb-close" aria-label={tr(copy.close)} onClick={close}>
+        {tr(copy.closeLabel)}
       </button>
       <button
         className="lb-prev"
-        aria-label="Previous"
+        aria-label={tr(copy.prev)}
         onClick={() => step(-1)}
       >
-        ← Prev
+        {tr(copy.prevLabel)}
       </button>
-      <button className="lb-next" aria-label="Next" onClick={() => step(1)}>
-        Next →
+      <button className="lb-next" aria-label={tr(copy.next)} onClick={() => step(1)}>
+        {tr(copy.nextLabel)}
       </button>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       {current?.src ? <img alt={current.label ?? ""} src={current.src} /> : null}

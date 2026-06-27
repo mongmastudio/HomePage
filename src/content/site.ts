@@ -1,3 +1,5 @@
+import type { Localized } from "./i18n";
+
 export const site = {
   studioName: "Mongma Studio",
   studioNameKo: "몽마 스튜디오",
@@ -5,8 +7,12 @@ export const site = {
   description:
     "Mongma Studio — a small indie game studio. 몽마 스튜디오. 손으로 다듬은 세계를 만듭니다.",
   logo: "/assets/mongma-studio-logo.png",
-  footerNote:
-    "Mongma Studio \n몽마 스튜디오. 작은 인디 게임 스튜디오. \n손으로 다듬은 세계를 만듭니다.",
+  // Footer brand note — keeps the "Mongma Studio" wordmark, localizes the rest. \n preserved.
+  footerNote: {
+    ko: "Mongma Studio \n몽마 스튜디오. 작은 인디 게임 스튜디오. \n손으로 다듬은 세계를 만듭니다.",
+    en: "Mongma Studio \nA small indie game studio. \nWe create handcrafted worlds.",
+    zh: "Mongma Studio \n小型独立游戏工作室。\n打造手工打磨的世界。",
+  } satisfies Localized,
   email: {
     display: "MONGMASTUDIO@GMAIL.COM",
     general: "contact@mongma-studio.com",
@@ -27,8 +33,16 @@ export const site = {
     qq: "https://qm.qq.com/q/2JrWB3a2He",
     qqNumber: "993073396",
   },
-  copyright: "© 2026 Mongma Studio. All rights reserved.",
-  madeBy: "Made by hand · 손으로 만든 사이트 · Seoul",
+  copyright: {
+    ko: "© 2026 Mongma Studio. 모든 권리 보유.",
+    en: "© 2026 Mongma Studio. All rights reserved.",
+    zh: "© 2026 Mongma Studio. 版权所有。",
+  } satisfies Localized,
+  madeBy: {
+    ko: "손으로 만든 사이트 · 서울",
+    en: "Made by hand · Seoul",
+    zh: "手工打造的网站 · 首尔",
+  } satisfies Localized,
 } as const;
 
 export type Site = typeof site;

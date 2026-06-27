@@ -1,29 +1,33 @@
+"use client";
+
 import Kicker from "@/components/common/Kicker";
 import Reveal from "@/components/common/Reveal";
 import { studioIntro } from "@/content/home";
+import { useLanguage } from "@/components/common/LanguageProvider";
 
 export default function StudioIntroSection() {
+  const { tr } = useLanguage();
   return (
     <section className="section" aria-labelledby="studio-intro">
       <div className="wrap">
         <Reveal className="two-col">
           <div>
-            <Kicker>{studioIntro.kicker}</Kicker>
+            <Kicker>{tr(studioIntro.kicker)}</Kicker>
             <h2
               id="studio-intro"
               className="h-section"
               style={{ margin: "14px 0 22px" }}
             >
-              {studioIntro.headline}{" "}
-              <span className="serif italic">{studioIntro.headlineItalic}</span>
+              {tr(studioIntro.headline)}{" "}
+              <span className="serif italic">{tr(studioIntro.headlineItalic)}</span>
             </h2>
           </div>
           <p className="studio-bigtext">
-            {studioIntro.bigtextLine1}
+            {tr(studioIntro.bigtextLine1)}
             <br />
-            {studioIntro.bigtextLine2}
-            <em>{studioIntro.bigtextLine2Em}</em>
-            {studioIntro.bigtextLine2End}
+            {tr(studioIntro.bigtextLine2)}
+            <em>{tr(studioIntro.bigtextLine2Em)}</em>
+            {tr(studioIntro.bigtextLine2End)}
           </p>
         </Reveal>
 
@@ -32,9 +36,9 @@ export default function StudioIntroSection() {
         <Reveal className="studio-grid">
           {studioIntro.cards.map((c, i) => (
             <div key={i} className="studio-card">
-              <span className="num">{c.num}</span>
-              <h3>{c.title}</h3>
-              <p>{c.description}</p>
+              <span className="num">{tr(c.num)}</span>
+              <h3>{tr(c.title)}</h3>
+              <p>{tr(c.description)}</p>
             </div>
           ))}
         </Reveal>

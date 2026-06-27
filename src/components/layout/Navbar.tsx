@@ -8,12 +8,19 @@ import LanguageDropdown from "@/components/common/LanguageDropdown";
 import Arrow from "@/components/common/Arrow";
 import { useMobileMenu } from "@/components/common/MobileMenuController";
 import { useLanguage } from "@/components/common/LanguageProvider";
-import { primaryNav } from "@/content/navigation";
+import { primaryNav, navCta } from "@/content/navigation";
 import { site } from "@/content/site";
+
+const copy = {
+  primary: { ko: "기본 내비게이션", en: "Primary navigation", zh: "主导航" },
+  games: { ko: "게임", en: "Games", zh: "游戏" },
+  openMenu: { ko: "메뉴 열기", en: "Open menu", zh: "打开菜单" },
+  menu: { ko: "메뉴", en: "Menu", zh: "菜单" },
+};
 
 export default function Navbar() {
   const pathname = usePathname();
-  const { t } = useLanguage();
+  const { tr } = useLanguage();
   const { toggle } = useMobileMenu();
   const [openGames, setOpenGames] = useState(false);
   const gamesRef = useRef<HTMLDivElement | null>(null);
@@ -43,7 +50,7 @@ export default function Navbar() {
       <div className="nav-inner">
         <Logo variant="nav" />
 
-        <nav className="nav-links" aria-label="Primary">
+        <nav className="nav-links" aria-label={tr(copy.primary)}>
           {primaryNav.map((g) =>
             g.type === "link" ? (
               <Link
@@ -52,19 +59,11 @@ export default function Navbar() {
                 data-route={g.route}
                 className={pathname === g.href ? "active" : undefined}
               >
-                {g.label === "Home"
-                  ? t.navHome
-                  : g.label === "Press Kit"
-                    ? t.navPress
-                    : g.label === "Support"
-                      ? t.navSupport
-                      : g.label === "Contact"
-                        ? t.navContact
-                        : g.label}
+                {tr(g.label)}
               </Link>
             ) : (
               <div
-                key={g.label}
+                key={g.label.en}
                 ref={gamesRef}
                 className="dropdown"
                 data-dd="games"
@@ -85,7 +84,7 @@ export default function Navbar() {
                     setOpenGames((v) => !v);
                   }}
                 >
-                  {t.navGames}{" "}
+                  {tr(g.label)}{" "}
                   <span
                     aria-hidden="true"
                     style={{ marginLeft: 6, fontSize: ".7em" }}
@@ -94,10 +93,10 @@ export default function Navbar() {
                   </span>
                 </button>
                 <div className="dropdown-menu" role="menu">
-                  <span className="ddm-section">Games</span>
+                  <span className="ddm-section">{tr(copy.games)}</span>
                   {g.menu?.map((m, i) => (
                     <Link key={i} href={m.href} role="menuitem">
-                      {m.label} <small>{m.small}</small>
+                      {tr(m.label)} <small>{m.small ? tr(m.small) : null}</small>
                     </Link>
                   ))}
                 </div>
@@ -114,14 +113,14 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t.navCta} <Arrow />
+            {tr(navCta)} <Arrow />
           </a>
           <button
             className="nav-burger"
-            aria-label="Open menu"
+            aria-label={tr(copy.openMenu)}
             onClick={toggle}
           >
-            Menu
+            {tr(copy.menu)}
           </button>
         </div>
       </div>

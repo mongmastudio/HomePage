@@ -1,11 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/content/site";
+import { useLanguage } from "@/components/common/LanguageProvider";
 
 type Variant = "nav" | "mobile-menu" | "footer";
 
 type Props = {
   variant?: Variant;
+};
+
+const copy = {
+  home: { ko: "홈", en: "Home", zh: "首页" },
 };
 
 /*
@@ -20,6 +27,7 @@ type Props = {
 */
 
 export default function Logo({ variant = "nav" }: Props) {
+  const { tr } = useLanguage();
   if (variant === "footer") {
     return (
       <Image
@@ -35,7 +43,11 @@ export default function Logo({ variant = "nav" }: Props) {
   const isMobile = variant === "mobile-menu";
 
   return (
-    <Link className="nav-logo" href="/" aria-label={`${site.studioName} — Home`}>
+    <Link
+      className="nav-logo"
+      href="/"
+      aria-label={`${site.studioName} — ${tr(copy.home)}`}
+    >
       <Image
         src={site.logo}
         alt={site.studioName}

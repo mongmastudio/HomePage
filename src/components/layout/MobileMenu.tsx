@@ -8,12 +8,17 @@ import Arrow from "@/components/common/Arrow";
 import { useMobileMenu } from "@/components/common/MobileMenuController";
 import { useLanguage } from "@/components/common/LanguageProvider";
 import { languages } from "@/content/i18n";
-import { mobileNav } from "@/content/navigation";
+import { mobileNav, navCta } from "@/content/navigation";
 import { site } from "@/content/site";
+
+const copy = {
+  close: { ko: "닫기", en: "Close", zh: "关闭" },
+  language: { ko: "언어", en: "Language", zh: "语言" },
+};
 
 export default function MobileMenu() {
   const { open, setOpen, toggle } = useMobileMenu();
-  const { lang, setLang, t } = useLanguage();
+  const { lang, setLang, tr } = useLanguage();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -30,7 +35,7 @@ export default function MobileMenu() {
       <div className="mm-top">
         <Logo variant="mobile-menu" />
         <button className="nav-burger" onClick={toggle}>
-          Close
+          {tr(copy.close)}
         </button>
       </div>
       <nav>
@@ -38,17 +43,17 @@ export default function MobileMenu() {
           if (m.kind === "link") {
             return (
               <Link key={`l-${i}`} href={m.href}>
-                {m.label}
+                {tr(m.label)}
               </Link>
             );
           }
           return (
             <Fragment key={`s-${i}`}>
-              <div className="mm-section">{m.label}</div>
+              <div className="mm-section">{tr(m.label)}</div>
               <div className="mm-sub">
                 {m.subItems.map((s, j) => (
                   <Link key={j} href={s.href}>
-                    {s.label}
+                    {tr(s.label)}
                   </Link>
                 ))}
               </div>
@@ -57,7 +62,7 @@ export default function MobileMenu() {
         })}
       </nav>
       <div className="mm-bottom">
-        <span className="mono">Language · 언어</span>
+        <span className="mono">{tr(copy.language)}</span>
         <div className="mm-langs">
           {languages.map((l) => (
             <button
@@ -76,7 +81,7 @@ export default function MobileMenu() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t.navCta} <Arrow />
+          {tr(navCta)} <Arrow />
         </a>
       </div>
     </div>

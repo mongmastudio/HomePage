@@ -4,8 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { languages } from "@/content/i18n";
 import { useLanguage } from "./LanguageProvider";
 
+const copy = {
+  language: { ko: "언어", en: "Language", zh: "语言" },
+};
+
 export default function LanguageDropdown() {
-  const { lang, setLang, t } = useLanguage();
+  const { lang, setLang, tr } = useLanguage();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -40,13 +44,15 @@ export default function LanguageDropdown() {
           setOpen((v) => !v);
         }}
       >
-        <span data-lang-current>{t.langLabel}</span>
+        <span data-lang-current>
+          {languages.find((l) => l.code === lang)?.label}
+        </span>
         <span aria-hidden="true" style={{ marginLeft: 6 }}>
           ▾
         </span>
       </button>
       <div className="dropdown-menu" role="menu">
-        <span className="ddm-section">Language</span>
+        <span className="ddm-section">{tr(copy.language)}</span>
         {languages.map((l) => (
           <a
             key={l.code}

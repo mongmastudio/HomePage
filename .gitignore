@@ -37,6 +37,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# i18n working docs (kept locally only — not published)
+/docs/i18n-audit.md
+/docs/i18n-translations-for-claude-code.md
+
 # extraction artifacts (kept locally for analysis only)
 /_extract/out
 

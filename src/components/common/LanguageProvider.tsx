@@ -12,15 +12,15 @@ import {
 import {
   defaultLanguage,
   htmlLangFor,
-  i18n,
-  type I18nDict,
+  type Localized,
   type LanguageCode,
 } from "@/content/i18n";
 
 type Ctx = {
   lang: LanguageCode;
   setLang: (l: LanguageCode) => void;
-  t: I18nDict;
+  /** Resolve a Localized value to the current language. */
+  tr: (value: Localized) => string;
 };
 
 const LanguageContext = createContext<Ctx | null>(null);
@@ -39,9 +39,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = htmlLangFor(lang);
   }, [lang]);
 
+  const tr = useCallback((value: Localized) => value[lang], [lang]);
+
   const value = useMemo<Ctx>(
-    () => ({ lang, setLang, t: i18n[lang] }),
-    [lang, setLang],
+    () => ({ lang, setLang, tr }),
+    [lang, setLang, tr],
   );
 
   return (

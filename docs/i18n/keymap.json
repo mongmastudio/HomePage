@@ -1,0 +1,3345 @@
+{
+  "common.cta.contact": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 255,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 29,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.cta.contactBusiness": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 29,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "common.cta.contactUs": [
+    {
+      "file": "src/content/support.ts",
+      "line": 37,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "common.cta.downloadPressKit": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 57,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 26,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.cta.joinDiscord": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 44,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 23,
+      "type": "visible",
+      "area": "support"
+    },
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 32,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "common.cta.pressKit": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 80,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "common.cta.sendEmail": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 283,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 49,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "common.cta.viewGame": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 69,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 63,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "common.cta.viewPressKit": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 249,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "common.cta.watchTrailer": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 77,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 54,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 93,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.cta.watchYoutube": [
+    {
+      "file": "src/components/home/MediaSection.tsx",
+      "line": 33,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 90,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 156,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.cta.wishlist": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "layout-chrome"
+    },
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 54,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 50,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 26,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "common.label.genre": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 52,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 125,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 48,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.label.languages": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 131,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 53,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.label.platform": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 56,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 126,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 49,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.label.setting": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 127,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "common.label.status": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 60,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 128,
+      "type": "visible",
+      "area": "revenant"
+    },
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 51,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "common.label.studio": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 52,
+      "type": "visible",
+      "area": "layout-chrome"
+    },
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 64,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 129,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "common.label.title": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 124,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "common.status.comingLater": [
+    {
+      "file": "src/content/home.ts",
+      "line": 73,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 31,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "common.status.comingSoon": [
+    {
+      "file": "src/content/support.ts",
+      "line": 35,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "common.ui.close": [
+    {
+      "file": "src/components/layout/MobileMenu.tsx",
+      "line": 34,
+      "type": "visible",
+      "area": "layout-chrome"
+    },
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 79,
+      "type": "aria",
+      "area": "common-misc"
+    }
+  ],
+  "contact.blocks.no01.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 9,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.blocks.no02.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 10,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.blocks.no03.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 11,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.blocks.no04.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 12,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.blocks.no04.uses": [
+    {
+      "file": "src/content/press.ts",
+      "line": 73,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.community.aria": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 68,
+      "type": "aria",
+      "area": "contact"
+    }
+  ],
+  "contact.community.heading": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 62,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.community.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 60,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.community.lede": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 65,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.hero.headline": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 21,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.hero.kicker": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 19,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "contact.hero.lede": [
+    {
+      "file": "src/app/contact/page.tsx",
+      "line": 24,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "footer.col.community": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 73,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.col.game": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 61,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.copyright": [
+    {
+      "file": "src/content/site.ts",
+      "line": 30,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.link.pressKitDrive": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 65,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.link.trailer": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 69,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.madeBy": [
+    {
+      "file": "src/content/site.ts",
+      "line": 31,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "footer.note": [
+    {
+      "file": "src/content/site.ts",
+      "line": 9,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "games.card.alt.keyArt": [
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 47,
+      "type": "alt",
+      "area": "games-list"
+    }
+  ],
+  "games.card.kicker.future": [
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 20,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.card.kicker.lab": [
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 20,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.card.trailer": [
+    {
+      "file": "src/components/games/GameCard.tsx",
+      "line": 73,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.common.tba": [
+    {
+      "file": "src/content/games.ts",
+      "line": 89,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future1.desc": [
+    {
+      "file": "src/content/games.ts",
+      "line": 137,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 137,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future1.footnote": [
+    {
+      "file": "src/content/games.ts",
+      "line": 138,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 138,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future1.label": [
+    {
+      "file": "src/content/games.ts",
+      "line": 134,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future1.stamp": [
+    {
+      "file": "src/content/games.ts",
+      "line": 133,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future1.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 135,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future2.desc": [
+    {
+      "file": "src/content/games.ts",
+      "line": 146,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future2.footnote": [
+    {
+      "file": "src/content/games.ts",
+      "line": 148,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 148,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future2.label": [
+    {
+      "file": "src/content/games.ts",
+      "line": 144,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future2.stamp": [
+    {
+      "file": "src/content/games.ts",
+      "line": 143,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 143,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future3.desc": [
+    {
+      "file": "src/content/games.ts",
+      "line": 157,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future3.footnote": [
+    {
+      "file": "src/content/games.ts",
+      "line": 159,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.future3.label": [
+    {
+      "file": "src/content/games.ts",
+      "line": 154,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 154,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.future3.stamp": [
+    {
+      "file": "src/content/games.ts",
+      "line": 153,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 153,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.futureProjects.experiment.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 156,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.futureProjects.experiment.footnote": [
+    {
+      "file": "src/content/games.ts",
+      "line": 158,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.futureProjects.future.label": [
+    {
+      "file": "src/content/games.ts",
+      "line": 135,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.futureProjects.future.stamp": [
+    {
+      "file": "src/content/games.ts",
+      "line": 134,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.futureProjects.prototype.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 147,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.headline": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 12,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.keepWatching.headline": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 33,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.keepWatching.kicker": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 32,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.kicker": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 10,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.lede": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 16,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.index.supportCta": [
+    {
+      "file": "src/app/games/page.tsx",
+      "line": 45,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.prototypeArchive.genre": [
+    {
+      "file": "src/content/games.ts",
+      "line": 116,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.prototypeArchive.number": [
+    {
+      "file": "src/content/games.ts",
+      "line": 112,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.prototypeArchive.shortDescription": [
+    {
+      "file": "src/content/games.ts",
+      "line": 118,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.prototypeArchive.statusLabel": [
+    {
+      "file": "src/content/games.ts",
+      "line": 115,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.prototypeArchive.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 113,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 46,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.features.boss.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 72,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.features.boss.num": [
+    {
+      "file": "src/content/games.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.boss.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 71,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 71,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.build.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 84,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.features.build.num": [
+    {
+      "file": "src/content/games.ts",
+      "line": 82,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 82,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.build.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 83,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 83,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.soul.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 66,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.features.soul.num": [
+    {
+      "file": "src/content/games.ts",
+      "line": 64,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 64,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.soul.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 65,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 65,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.synergy.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 78,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.features.synergy.num": [
+    {
+      "file": "src/content/games.ts",
+      "line": 76,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 76,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.features.synergy.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 77,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 77,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.languages": [
+    {
+      "file": "src/content/games.ts",
+      "line": 88,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 88,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.number": [
+    {
+      "file": "src/content/games.ts",
+      "line": 36,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.setting": [
+    {
+      "file": "src/content/games.ts",
+      "line": 43,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 43,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.shortDescription": [
+    {
+      "file": "src/content/games.ts",
+      "line": 44,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.revenant.tagline": [
+    {
+      "file": "src/content/games.ts",
+      "line": 48,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 48,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.tags.actionRoguelite": [
+    {
+      "file": "src/content/games.ts",
+      "line": 56,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 56,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.tags.bossPowers": [
+    {
+      "file": "src/content/games.ts",
+      "line": 58,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 58,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.tags.skillSynergy": [
+    {
+      "file": "src/content/games.ts",
+      "line": 59,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 59,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.revenant.tags.survivorsLike": [
+    {
+      "file": "src/content/games.ts",
+      "line": 57,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 57,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.items.untitled02.number": [
+    {
+      "file": "src/content/games.ts",
+      "line": 94,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.placeholderLabel": [
+    {
+      "file": "src/content/games.ts",
+      "line": 107,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.shortDescription": [
+    {
+      "file": "src/content/games.ts",
+      "line": 100,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.statusLabel": [
+    {
+      "file": "src/content/games.ts",
+      "line": 97,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.tags.genreTba": [
+    {
+      "file": "src/content/games.ts",
+      "line": 105,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.tags.platformTba": [
+    {
+      "file": "src/content/games.ts",
+      "line": 105,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.items.untitled02.title": [
+    {
+      "file": "src/content/games.ts",
+      "line": 95,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.revenant.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 47,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "games.revenant.genre": [
+    {
+      "file": "src/content/games.ts",
+      "line": 41,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 41,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 41,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "games.revenant.platform": [
+    {
+      "file": "src/content/games.ts",
+      "line": 42,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 42,
+      "type": "visible",
+      "area": "games-list"
+    }
+  ],
+  "games.revenant.statusLabel": [
+    {
+      "file": "src/content/games.ts",
+      "line": 40,
+      "type": "visible",
+      "area": "home"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 40,
+      "type": "visible",
+      "area": "games-list"
+    },
+    {
+      "file": "src/content/games.ts",
+      "line": 40,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "home.community.aria": [
+    {
+      "file": "src/components/home/CommunitySection.tsx",
+      "line": 23,
+      "type": "aria",
+      "area": "home"
+    }
+  ],
+  "home.community.headlineBefore": [
+    {
+      "file": "src/components/home/CommunitySection.tsx",
+      "line": 25,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.community.headlineItalic": [
+    {
+      "file": "src/components/home/CommunitySection.tsx",
+      "line": 26,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.community.kicker": [
+    {
+      "file": "src/components/home/CommunitySection.tsx",
+      "line": 24,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.community.lede": [
+    {
+      "file": "src/components/home/CommunitySection.tsx",
+      "line": 29,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.cta.allChannels": [
+    {
+      "file": "src/components/home/CTASection.tsx",
+      "line": 26,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.cta.headline": [
+    {
+      "file": "src/content/home.ts",
+      "line": 87,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.cta.headlineItalic": [
+    {
+      "file": "src/content/home.ts",
+      "line": 88,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.cta.kicker": [
+    {
+      "file": "src/content/home.ts",
+      "line": 86,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.featured.cornerLabel": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 34,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.featured.keyArtAlt": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 20,
+      "type": "alt",
+      "area": "home"
+    }
+  ],
+  "home.featured.kicker": [
+    {
+      "file": "src/components/home/FeaturedGameSection.tsx",
+      "line": 38,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.future.headline": [
+    {
+      "file": "src/components/home/FutureGamesSection.tsx",
+      "line": 23,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.future.headlineItalic": [
+    {
+      "file": "src/components/home/FutureGamesSection.tsx",
+      "line": 24,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.future.kicker": [
+    {
+      "file": "src/components/home/FutureGamesSection.tsx",
+      "line": 17,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.future.lede": [
+    {
+      "file": "src/components/home/FutureGamesSection.tsx",
+      "line": 28,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.collage.featuredMeta": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 62,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.collage.keyVisualAlt": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 68,
+      "type": "alt",
+      "area": "home"
+    }
+  ],
+  "home.hero.collage.logoAlt": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 81,
+      "type": "alt",
+      "area": "home"
+    }
+  ],
+  "home.hero.collage.studioMark": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 75,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.cta.viewGames": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 48,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.cta.viewRevenant": [
+    {
+      "file": "src/components/home/HeroSection.tsx",
+      "line": 51,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.headline1": [
+    {
+      "file": "src/content/home.ts",
+      "line": 8,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.headline2Italic": [
+    {
+      "file": "src/content/home.ts",
+      "line": 9,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.headline3": [
+    {
+      "file": "src/content/home.ts",
+      "line": 10,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.lede": [
+    {
+      "file": "src/content/home.ts",
+      "line": 12,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.noteBody": [
+    {
+      "file": "src/content/home.ts",
+      "line": 14,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.noteLabel": [
+    {
+      "file": "src/content/home.ts",
+      "line": 13,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.sticker1": [
+    {
+      "file": "src/content/home.ts",
+      "line": 2,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.sticker2": [
+    {
+      "file": "src/content/home.ts",
+      "line": 3,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.hero.sticker3": [
+    {
+      "file": "src/content/home.ts",
+      "line": 4,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.media.headlineItalic": [
+    {
+      "file": "src/components/home/MediaSection.tsx",
+      "line": 16,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.media.iframeTitle": [
+    {
+      "file": "src/components/home/MediaSection.tsx",
+      "line": 26,
+      "type": "title",
+      "area": "home"
+    }
+  ],
+  "home.media.kicker": [
+    {
+      "file": "src/components/home/MediaSection.tsx",
+      "line": 13,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.media.lede": [
+    {
+      "file": "src/components/home/MediaSection.tsx",
+      "line": 20,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.headline": [
+    {
+      "file": "src/components/home/NewsSection.tsx",
+      "line": 17,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item1.body": [
+    {
+      "file": "src/content/home.ts",
+      "line": 59,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item1.date": [
+    {
+      "file": "src/content/home.ts",
+      "line": 56,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item1.more": [
+    {
+      "file": "src/content/home.ts",
+      "line": 60,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item1.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 57,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item2.body": [
+    {
+      "file": "src/content/home.ts",
+      "line": 65,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item2.more": [
+    {
+      "file": "src/content/home.ts",
+      "line": 66,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item2.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 64,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item3.body": [
+    {
+      "file": "src/content/home.ts",
+      "line": 72,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item3.date": [
+    {
+      "file": "src/content/home.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item3.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 71,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item4.body": [
+    {
+      "file": "src/content/home.ts",
+      "line": 79,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item4.date": [
+    {
+      "file": "src/content/home.ts",
+      "line": 76,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item4.more": [
+    {
+      "file": "src/content/home.ts",
+      "line": 81,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.item4.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 77,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.kicker": [
+    {
+      "file": "src/components/home/NewsSection.tsx",
+      "line": 11,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.news.lede": [
+    {
+      "file": "src/components/home/NewsSection.tsx",
+      "line": 21,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.bigtext1": [
+    {
+      "file": "src/content/home.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.bigtext2": [
+    {
+      "file": "src/content/home.ts",
+      "line": 24,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.bigtext2Em": [
+    {
+      "file": "src/content/home.ts",
+      "line": 25,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.bigtext2End": [
+    {
+      "file": "src/content/home.ts",
+      "line": 26,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card1.desc": [
+    {
+      "file": "src/content/home.ts",
+      "line": 31,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card1.num": [
+    {
+      "file": "src/content/home.ts",
+      "line": 29,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card1.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 30,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card2.desc": [
+    {
+      "file": "src/content/home.ts",
+      "line": 37,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card2.num": [
+    {
+      "file": "src/content/home.ts",
+      "line": 35,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card2.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 36,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card3.desc": [
+    {
+      "file": "src/content/home.ts",
+      "line": 43,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card3.num": [
+    {
+      "file": "src/content/home.ts",
+      "line": 41,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card3.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 42,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card4.desc": [
+    {
+      "file": "src/content/home.ts",
+      "line": 49,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card4.num": [
+    {
+      "file": "src/content/home.ts",
+      "line": 47,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.card4.title": [
+    {
+      "file": "src/content/home.ts",
+      "line": 48,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.headline": [
+    {
+      "file": "src/content/home.ts",
+      "line": 19,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.headlineItalic": [
+    {
+      "file": "src/content/home.ts",
+      "line": 20,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "home.studio.kicker": [
+    {
+      "file": "src/content/home.ts",
+      "line": 18,
+      "type": "visible",
+      "area": "home"
+    }
+  ],
+  "lang.en.label": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 12,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.en.sub": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 12,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.heading": [
+    {
+      "file": "src/components/common/LanguageDropdown.tsx",
+      "line": 49,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.ko.label": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 11,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.ko.sub": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 11,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.zh.label": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 13,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lang.zh.sub": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 13,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "lightbox.close": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 80,
+      "type": "visible",
+      "area": "common-misc"
+    }
+  ],
+  "lightbox.imageViewer": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 74,
+      "type": "aria",
+      "area": "common-misc"
+    }
+  ],
+  "lightbox.next": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 89,
+      "type": "aria",
+      "area": "common-misc"
+    }
+  ],
+  "lightbox.nextLabel": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 90,
+      "type": "visible",
+      "area": "common-misc"
+    }
+  ],
+  "lightbox.prevLabel": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 87,
+      "type": "visible",
+      "area": "common-misc"
+    }
+  ],
+  "lightbox.previous": [
+    {
+      "file": "src/components/common/Lightbox.tsx",
+      "line": 84,
+      "type": "aria",
+      "area": "common-misc"
+    }
+  ],
+  "meta.description": [
+    {
+      "file": "src/app/layout.tsx",
+      "line": 13,
+      "type": "metadata",
+      "area": "layout-chrome"
+    }
+  ],
+  "meta.title": [
+    {
+      "file": "src/app/layout.tsx",
+      "line": 12,
+      "type": "metadata",
+      "area": "layout-chrome"
+    }
+  ],
+  "mobileMenu.languageLabel": [
+    {
+      "file": "src/components/layout/MobileMenu.tsx",
+      "line": 60,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.aria.logoHome": [
+    {
+      "file": "src/components/common/Logo.tsx",
+      "line": 38,
+      "type": "aria",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.aria.openMenu": [
+    {
+      "file": "src/components/layout/Navbar.tsx",
+      "line": 121,
+      "type": "aria",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.aria.primary": [
+    {
+      "file": "src/components/layout/Navbar.tsx",
+      "line": 46,
+      "type": "aria",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.contact": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 21,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.dropdownGames": [
+    {
+      "file": "src/components/layout/Navbar.tsx",
+      "line": 97,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.games": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 18,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.home": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 17,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menu.allGames": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 16,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menu.allGamesSmall": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 16,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menu.futureProjects": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menu.futureProjectsSmall": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menu.revenantStatus": [
+    {
+      "file": "src/content/navigation.ts",
+      "line": 19,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.menuButton": [
+    {
+      "file": "src/components/layout/Navbar.tsx",
+      "line": 124,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.pressKit": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 19,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "nav.support": [
+    {
+      "file": "src/content/i18n.ts",
+      "line": 20,
+      "type": "visible",
+      "area": "layout-chrome"
+    }
+  ],
+  "press.downloads.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 108,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item1.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 18,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item1.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 20,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item1.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 19,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item2.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item2.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item2.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item3.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 23,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item3.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 23,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item3.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 23,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item4.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 27,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item4.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 27,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item5.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 29,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item5.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 29,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item5.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 29,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item6.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 30,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item6.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 30,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item6.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 30,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item7.lbl": [
+    {
+      "file": "src/content/press.ts",
+      "line": 32,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item7.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 34,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item7.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 33,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item8.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 39,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item8.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 38,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item9.size": [
+    {
+      "file": "src/content/press.ts",
+      "line": 44,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.item9.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 43,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 107,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.lede": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 112,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.downloads.openDrive": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 124,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.downloadKeyArt": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 91,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 40,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.keyVisualAlt": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 80,
+      "type": "alt",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 39,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.contact": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 64,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.developer": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 46,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.gameTitle": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 45,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.price": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 56,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.publisher": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 47,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.label.releaseDate": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 50,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.value.genre": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 48,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.value.languages": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 54,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.value.releaseDate": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 50,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.factsheet.value.status": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 51,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.hero.headline": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 18,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.hero.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 17,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.hero.lede": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 21,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 261,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 260,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.lede": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 265,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.no01.num": [
+    {
+      "file": "src/content/press.ts",
+      "line": 50,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.no01.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 51,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 51,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no01.uses": [
+    {
+      "file": "src/content/press.ts",
+      "line": 54,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 54,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no02.num": [
+    {
+      "file": "src/content/press.ts",
+      "line": 57,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.no02.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 58,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 58,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no02.uses": [
+    {
+      "file": "src/content/press.ts",
+      "line": 60,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 60,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no03.num": [
+    {
+      "file": "src/content/press.ts",
+      "line": 63,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.no03.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 64,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 64,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no03.uses": [
+    {
+      "file": "src/content/press.ts",
+      "line": 66,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 66,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no04.num": [
+    {
+      "file": "src/content/press.ts",
+      "line": 69,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.inquiry.no04.title": [
+    {
+      "file": "src/content/press.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "press"
+    },
+    {
+      "file": "src/content/press.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "contact"
+    }
+  ],
+  "press.inquiry.no04.uses": [
+    {
+      "file": "src/content/press.ts",
+      "line": 72,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenLabel": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 15,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.download": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 224,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 172,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 171,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.lede": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 176,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.02": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 193,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.03": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 199,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.04": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 205,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.05": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 211,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.06": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 217,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.screenshots.tile.keyVisual": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 188,
+      "type": "alt",
+      "area": "press"
+    }
+  ],
+  "press.studio.body1": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 241,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.studio.body2": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 246,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.studio.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 236,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.studio.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 235,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.trailer.downloadVideo": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 159,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.trailer.heading": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 138,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.trailer.iframeTitle": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 150,
+      "type": "title",
+      "area": "press"
+    }
+  ],
+  "press.trailer.kicker": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 137,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "press.trailer.lede": [
+    {
+      "file": "src/app/press/page.tsx",
+      "line": 142,
+      "type": "visible",
+      "area": "press"
+    }
+  ],
+  "revenant.community.ariaLabel": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 270,
+      "type": "aria",
+      "area": "revenant"
+    }
+  ],
+  "revenant.community.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 266,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.community.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 264,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.card1.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 67,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.card2.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 73,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.card3.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 79,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.card4.description": [
+    {
+      "file": "src/content/games.ts",
+      "line": 85,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 152,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 150,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.features.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 156,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 179,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.imageAltFallback": [
+    {
+      "file": "src/components/revenant/RevGallery.tsx",
+      "line": 62,
+      "type": "alt",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.keyArtAlt": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 194,
+      "type": "alt",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 177,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 183,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile02": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 195,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile03": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 196,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile04": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 197,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile05": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 198,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile06": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 199,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile07": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 200,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.gallery.tile08": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 201,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.hero.iconAlt": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 24,
+      "type": "alt",
+      "area": "revenant"
+    }
+  ],
+  "revenant.overview.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 108,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.overview.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 106,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.overview.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 112,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.press.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 240,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.press.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 238,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.press.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 243,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.steam.followOnSteam": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 226,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.steam.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 211,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.steam.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 210,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.steam.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 216,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.trailer.h2": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 70,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.trailer.iframeTitle": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 83,
+      "type": "title",
+      "area": "revenant"
+    }
+  ],
+  "revenant.trailer.kicker": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 68,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "revenant.trailer.lede": [
+    {
+      "file": "src/app/games/revenant-survivors/page.tsx",
+      "line": 74,
+      "type": "visible",
+      "area": "revenant"
+    }
+  ],
+  "support.hero.headline": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 13,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.hero.kicker": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 12,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.hero.lede": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 16,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.note.label": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 110,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.note.stamp": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 115,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.note.text": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 110,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.a.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 34,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.a.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 31,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.a.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 32,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.b.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 46,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.b.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 43,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.b.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 44,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.c.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 62,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.c.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 59,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.c.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 60,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.d.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 73,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.d.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 70,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.d.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 71,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.heading": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 66,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.kicker": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 64,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.options.lede": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 69,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card1.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 6,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card1.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 3,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card1.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 4,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card2.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 12,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card2.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 9,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card2.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 10,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card3.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 18,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card3.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 15,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card3.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 16,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card4.desc": [
+    {
+      "file": "src/content/support.ts",
+      "line": 24,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card4.num": [
+    {
+      "file": "src/content/support.ts",
+      "line": 21,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.card4.title": [
+    {
+      "file": "src/content/support.ts",
+      "line": 22,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.heading": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 40,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.kicker": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 38,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "support.why.lede": [
+    {
+      "file": "src/app/support/page.tsx",
+      "line": 43,
+      "type": "visible",
+      "area": "support"
+    }
+  ],
+  "_aliases": {
+    "games.revenant.genre": [
+      "games.items.revenant.genre",
+      "revenant.fact.genre"
+    ],
+    "games.revenant.platform": [
+      "games.items.revenant.platform"
+    ],
+    "games.revenant.statusLabel": [
+      "games.items.revenant.statusLabel",
+      "revenant.statusLabel"
+    ],
+    "games.future1.desc": [
+      "games.futureProjects.future.description"
+    ],
+    "games.future1.footnote": [
+      "games.futureProjects.future.footnote"
+    ],
+    "games.future2.stamp": [
+      "games.futureProjects.prototype.stamp"
+    ],
+    "games.future2.footnote": [
+      "games.futureProjects.prototype.footnote"
+    ],
+    "games.future3.stamp": [
+      "games.futureProjects.experiment.stamp"
+    ],
+    "games.future3.label": [
+      "games.futureProjects.experiment.label"
+    ],
+    "games.items.revenant.setting": [
+      "revenant.fact.setting"
+    ],
+    "games.items.revenant.tagline": [
+      "revenant.tagline"
+    ],
+    "games.items.revenant.tags.actionRoguelite": [
+      "revenant.tags.actionRoguelite"
+    ],
+    "games.items.revenant.tags.survivorsLike": [
+      "revenant.tags.survivorsLike"
+    ],
+    "games.items.revenant.tags.bossPowers": [
+      "revenant.tags.bossPowers"
+    ],
+    "games.items.revenant.tags.skillSynergy": [
+      "revenant.tags.skillSynergy"
+    ],
+    "games.items.revenant.features.soul.num": [
+      "revenant.features.card1.num"
+    ],
+    "games.items.revenant.features.soul.title": [
+      "revenant.features.card1.title"
+    ],
+    "games.items.revenant.features.boss.num": [
+      "revenant.features.card2.num"
+    ],
+    "games.items.revenant.features.boss.title": [
+      "revenant.features.card2.title"
+    ],
+    "games.items.revenant.features.synergy.num": [
+      "revenant.features.card3.num"
+    ],
+    "games.items.revenant.features.synergy.title": [
+      "revenant.features.card3.title"
+    ],
+    "games.items.revenant.features.build.num": [
+      "revenant.features.card4.num"
+    ],
+    "games.items.revenant.features.build.title": [
+      "revenant.features.card4.title"
+    ],
+    "games.items.revenant.languages": [
+      "revenant.fact.languages"
+    ],
+    "press.inquiry.no01.title": [
+      "contact.blocks.no01.title"
+    ],
+    "press.inquiry.no01.uses": [
+      "contact.blocks.no01.uses"
+    ],
+    "press.inquiry.no02.title": [
+      "contact.blocks.no02.title"
+    ],
+    "press.inquiry.no02.uses": [
+      "contact.blocks.no02.uses"
+    ],
+    "press.inquiry.no03.title": [
+      "contact.blocks.no03.title"
+    ],
+    "press.inquiry.no03.uses": [
+      "contact.blocks.no03.uses"
+    ],
+    "press.inquiry.no04.title": [
+      "contact.blocks.no04.title"
+    ]
+  }
+}

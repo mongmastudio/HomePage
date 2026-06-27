@@ -87,6 +87,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
   z-index:50;
 }
 .dropdown[data-open="true"] .dropdown-menu{opacity:1;transform:translateY(0);pointer-events:auto}
+/* Invisible bridge across the 8px gap so hover doesn't drop while moving
+   from the trigger to the menu (keeps the cursor inside .dropdown). */
+.dropdown-menu::before{content:"";position:absolute;top:-10px;left:0;right:0;height:10px}
 .dropdown-menu a{
   display:block;padding:9px 12px;font-size:.9rem;border-radius:3px;
 }

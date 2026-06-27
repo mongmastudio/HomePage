@@ -1,0 +1,2216 @@
+{
+  "_instructions": {
+    "목적": "이 파일의 각 키는 Mongma Studio 웹사이트의 화면 텍스트 1개를 가리킵니다. 모든 키에 대해 ko(한국어)·en(영어)·zh(중국어 간체) 3개 언어 값을 채워 주세요.",
+    "작업방법": [
+      "1) 값이 이미 채워진 칸은 '원문'입니다. 절대 수정하지 마세요. 빈 문자열(\"\")인 칸만 채웁니다.",
+      "2) ctx(맥락)를 보고 톤과 길이를 맞춥니다. 버튼/라벨은 짧고 간결하게, 본문(lead/desc)은 자연스러운 문장으로.",
+      "3) en은 자연스러운 영어, zh는 반드시 간체(简体)로 작성합니다.",
+      "4) 결과는 이 JSON 구조 그대로, 키를 바꾸지 말고 값(ko/en/zh)만 채워 반환하세요."
+    ],
+    "번역하지말것": [
+      "고유명사/브랜드: Mongma Studio, 몽마 스튜디오, Revenant Survivors, Steam, YouTube, Discord, X, Bluesky, Bilibili, QQ.",
+      "이메일/URL, 숫자·코드(No.01, 01 · World, 1920×1080, 2026 · 04 · 22), 도시명 Seoul.",
+      "ctx에 '브랜드 고정' '원어 유지'라고 적힌 부분은 해당 토큰을 그대로 두고 나머지 설명어만 번역."
+    ],
+    "서식규칙": [
+      "줄바꿈(\\n), 중점(·), em-dash(—), 화살표(→), 슬래시(/), 따옴표(“ ”)는 원문 그대로 보존.",
+      "키커 패턴 '/ word · 설명' 은 '/ word ·' 슬래시 스타일을 유지하고 '설명' 부분만 해당 언어로 번역. (예: '/ studio · 스튜디오 소개' → en '/ studio · Studio Intro', zh '/ studio · 工作室介绍')",
+      "메타데이터/카피에서 브랜드 토큰(Mongma Studio 등)은 위치 그대로 두고 주변 설명만 번역."
+    ],
+    "특수항목": [
+      "fixed:true 인 항목(언어 이름 한국어/English/简体中文)은 3개 언어 모두 원어를 그대로 유지합니다. 이미 채워져 있으니 건드리지 마세요.",
+      "lang.*.sub (언어 보조 설명)은 현재 UI 언어 기준의 언어명으로 번역합니다. 예) ko: 한국어/영어/중국어 간체, en: Korean/English/Simplified Chinese, zh: 韩语/英语/简体中文."
+    ],
+    "회신후": "채워서 돌려주시면 개발자가 ko/en/zh 값을 코드의 i18n 사전과 컴포넌트에 매핑합니다. keymap.json 은 개발자 전용(어느 파일/라인에 쓰이는지)이라 번역할 필요 없습니다."
+  },
+  "_legend": {
+    "ctx": "이 텍스트가 화면에서 어디에 쓰이는지 설명(번역 톤 참고용). 번역 대상 아님.",
+    "ko": "한국어 값 — 비어있으면 채울 것",
+    "en": "English value — fill if empty",
+    "zh": "简体中文 value — fill if empty",
+    "fixed": "true면 3개 언어 모두 동일 원어 유지(수정 금지)"
+  },
+  "strings": {
+    "common.cta.contact": {
+      "ctx": "CTA 버튼: 문의하기",
+      "ko": "",
+      "en": "Contact",
+      "zh": ""
+    },
+    "common.cta.contactBusiness": {
+      "ctx": "CTA 버튼 라벨: 비즈니스 문의",
+      "ko": "",
+      "en": "Contact Business",
+      "zh": ""
+    },
+    "common.cta.contactUs": {
+      "ctx": "후원 옵션 버튼 라벨: 문의하기",
+      "ko": "",
+      "en": "Contact Us",
+      "zh": ""
+    },
+    "common.cta.downloadPressKit": {
+      "ctx": "CTA 버튼: 프레스킷 다운로드",
+      "ko": "",
+      "en": "Download Press Kit",
+      "zh": ""
+    },
+    "common.cta.joinDiscord": {
+      "ctx": "하단 CTA 버튼. 'Discord'는 브랜드명 고정",
+      "ko": "",
+      "en": "Join Discord",
+      "zh": ""
+    },
+    "common.cta.pressKit": {
+      "ctx": "CTA 버튼 (피처드/하단 문의 섹션)",
+      "ko": "",
+      "en": "Press Kit",
+      "zh": ""
+    },
+    "common.cta.sendEmail": {
+      "ctx": "문의 카드 메일 버튼 (뒤에 화살표 글리프)",
+      "ko": "",
+      "en": "Send Email",
+      "zh": ""
+    },
+    "common.cta.viewGame": {
+      "ctx": "피처드 CTA 버튼 (뒤에 화살표 →)",
+      "ko": "",
+      "en": "View Game",
+      "zh": ""
+    },
+    "common.cta.viewPressKit": {
+      "ctx": "CTA 버튼: 프레스킷 보기",
+      "ko": "",
+      "en": "View Press Kit",
+      "zh": ""
+    },
+    "common.cta.watchTrailer": {
+      "ctx": "피처드 CTA 버튼",
+      "ko": "",
+      "en": "Watch Trailer",
+      "zh": ""
+    },
+    "common.cta.watchYoutube": {
+      "ctx": "미디어 섹션 CTA 버튼 (뒤에 화살표 →)",
+      "ko": "",
+      "en": "Watch on YouTube",
+      "zh": ""
+    },
+    "common.cta.wishlist": {
+      "ctx": "네비게이션/모바일 메뉴 우측 위시리스트 CTA 버튼 (i18n navCta). 'Steam' 브랜드 고정.",
+      "ko": "",
+      "en": "Wishlist on Steam",
+      "zh": ""
+    },
+    "common.label.genre": {
+      "ctx": "피처드 메타 항목 라벨 (장르)",
+      "ko": "",
+      "en": "Genre",
+      "zh": ""
+    },
+    "common.label.languages": {
+      "ctx": "팩트표 행 라벨: 지원 언어",
+      "ko": "",
+      "en": "Languages",
+      "zh": ""
+    },
+    "common.label.platform": {
+      "ctx": "피처드 메타 항목 라벨 (플랫폼)",
+      "ko": "",
+      "en": "Platform",
+      "zh": ""
+    },
+    "common.label.setting": {
+      "ctx": "팩트표 행 라벨: 배경/세계관",
+      "ko": "",
+      "en": "Setting",
+      "zh": ""
+    },
+    "common.label.status": {
+      "ctx": "피처드 메타 항목 라벨 (상태)",
+      "ko": "",
+      "en": "Status",
+      "zh": ""
+    },
+    "common.label.studio": {
+      "ctx": "푸터 컬럼 헤딩 'Studio' (스튜디오 섹션).",
+      "ko": "",
+      "en": "Studio",
+      "zh": ""
+    },
+    "common.label.title": {
+      "ctx": "팩트표 행 라벨: 제목",
+      "ko": "",
+      "en": "Title",
+      "zh": ""
+    },
+    "common.status.comingLater": {
+      "ctx": "뉴스 카드3 더보기 라벨 (현재 표기 'Coming later', 정식 표기는 'Coming Later')",
+      "ko": "",
+      "en": "Coming Later",
+      "zh": ""
+    },
+    "common.status.comingSoon": {
+      "ctx": "후원 옵션 A 기본 버튼 라벨(비활성): 준비 중",
+      "ko": "",
+      "en": "Coming Soon",
+      "zh": ""
+    },
+    "common.ui.close": {
+      "ctx": "모바일 메뉴 닫기 버튼 텍스트.",
+      "ko": "",
+      "en": "Close",
+      "zh": ""
+    },
+    "contact.blocks.no01.kicker": {
+      "ctx": "문의 블록 키커: 'No.01 ·' 번호 접두 유지, 'General'만 번역",
+      "ko": "",
+      "en": "No.01 · General",
+      "zh": ""
+    },
+    "contact.blocks.no02.kicker": {
+      "ctx": "문의 블록 키커: 'No.02 ·' 번호 접두 유지, 'Press'만 번역",
+      "ko": "",
+      "en": "No.02 · Press",
+      "zh": ""
+    },
+    "contact.blocks.no03.kicker": {
+      "ctx": "문의 블록 키커: 'No.03 ·' 번호 접두 유지, 'Creators'만 번역",
+      "ko": "",
+      "en": "No.03 · Creators",
+      "zh": ""
+    },
+    "contact.blocks.no04.kicker": {
+      "ctx": "문의 블록 키커: 'No.04 ·' 번호 접두 유지, 'Business'만 번역",
+      "ko": "",
+      "en": "No.04 · Business",
+      "zh": ""
+    },
+    "contact.blocks.no04.uses": {
+      "ctx": "문의 블록 설명 (No.04), '·' 구분자 및 'B2B' 유지",
+      "ko": "비즈니스 문의 · 퍼블리셔 문의 · 파트너십 · 행사 · B2B · 투자 · 협업 문의.",
+      "en": "",
+      "zh": ""
+    },
+    "contact.community.aria": {
+      "ctx": "커뮤니티 채널 목록 nav의 aria-label",
+      "ko": "",
+      "en": "Contact community",
+      "zh": ""
+    },
+    "contact.community.heading": {
+      "ctx": "커뮤니티 섹션 영문 제목(스타일리시 태그라인)",
+      "ko": "",
+      "en": "Or just hang around.",
+      "zh": ""
+    },
+    "contact.community.kicker": {
+      "ctx": "커뮤니티 섹션 키커: '/ community ·' 슬래시 스타일 유지, 설명(커뮤니티)만 번역",
+      "ko": "/ community · 커뮤니티",
+      "en": "",
+      "zh": ""
+    },
+    "contact.community.lede": {
+      "ctx": "커뮤니티 섹션 리드 문장(한국어 본문)",
+      "ko": "메일이 부담스럽다면 커뮤니티에서 가볍게 인사해 주셔도 좋아요.",
+      "en": "",
+      "zh": ""
+    },
+    "contact.hero.headline": {
+      "ctx": "Contact 히어로 영문 헤드라인(스타일리시 태그라인). 'in any tongue.' 부분은 이탤릭 span 처리",
+      "ko": "",
+      "en": "Say hello, in any tongue.",
+      "zh": ""
+    },
+    "contact.hero.kicker": {
+      "ctx": "Contact 히어로 키커: '/ contact ·' 슬래시 스타일 유지, 설명(문의)만 번역",
+      "ko": "/ contact · 문의",
+      "en": "",
+      "zh": ""
+    },
+    "contact.hero.lede": {
+      "ctx": "Contact 히어로 리드 문장(한국어 본문)",
+      "ko": "메일 한 통이면 충분합니다. 아래 4개의 채널 중 가장 가까운 곳으로 보내주시면, 가능한 빠르게 답장드릴게요.",
+      "en": "",
+      "zh": ""
+    },
+    "footer.col.community": {
+      "ctx": "푸터 컬럼 헤딩.",
+      "ko": "",
+      "en": "Community",
+      "zh": ""
+    },
+    "footer.col.game": {
+      "ctx": "푸터 컬럼 헤딩.",
+      "ko": "",
+      "en": "Game",
+      "zh": ""
+    },
+    "footer.copyright": {
+      "ctx": "푸터 저작권 표기. 연도/'Mongma Studio' 고정, 'All rights reserved.'만 번역.",
+      "ko": "",
+      "en": "© 2026 Mongma Studio. All rights reserved.",
+      "zh": ""
+    },
+    "footer.link.pressKitDrive": {
+      "ctx": "푸터 Game 컬럼 링크. 'Press Kit' + 'Drive'(구글 드라이브), '·' 구분 유지.",
+      "ko": "",
+      "en": "Press Kit · Drive",
+      "zh": ""
+    },
+    "footer.link.trailer": {
+      "ctx": "푸터 Game 컬럼 링크 (유튜브 트레일러).",
+      "ko": "",
+      "en": "Trailer",
+      "zh": ""
+    },
+    "footer.madeBy": {
+      "ctx": "푸터 제작 표기. 영문/한글 혼합, '·' 구분 유지. 'Seoul' 지명.",
+      "ko": "Made by hand · 손으로 만든 사이트 · Seoul",
+      "en": "",
+      "zh": ""
+    },
+    "footer.note": {
+      "ctx": "푸터 브랜드 소개문. 'Mongma Studio' 고정 + 한글 소개. 줄바꿈(\\n) 2곳 유지.",
+      "ko": "Mongma Studio \n몽마 스튜디오. 작은 인디 게임 스튜디오. \n손으로 다듬은 세계를 만듭니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.card.alt.keyArt": {
+      "ctx": "게임 카드 키비주얼 이미지 alt: '{게임 제목} key art' 형태, 'key art' 부분만 번역",
+      "ko": "",
+      "en": "key art",
+      "zh": ""
+    },
+    "games.card.kicker.future": {
+      "ctx": "플레이스홀더 게임 카드 키커의 'Future' 라벨 (coming-soon 상태). 'No.XX · Future' 형태로 표시",
+      "ko": "",
+      "en": "Future",
+      "zh": ""
+    },
+    "games.card.kicker.lab": {
+      "ctx": "플레이스홀더 게임 카드 키커의 'Lab' 라벨 (기타 상태). 'No.XX · Lab' 형태로 표시",
+      "ko": "",
+      "en": "Lab",
+      "zh": ""
+    },
+    "games.card.trailer": {
+      "ctx": "게임 카드의 트레일러 링크 버튼 라벨 ('Steam' 버튼은 브랜드명으로 제외)",
+      "ko": "",
+      "en": "Trailer",
+      "zh": ""
+    },
+    "games.common.tba": {
+      "ctx": "미정 값 (To Be Announced). price/genre/platform 등 여러 곳에서 동일하게 사용",
+      "ko": "",
+      "en": "TBA",
+      "zh": ""
+    },
+    "games.future1.desc": {
+      "ctx": "로드맵 카드1 설명",
+      "ko": "기록되지 않은 무언가가 천천히 다듬어지고 있습니다. 장르와 톤은 아직 비공개.",
+      "en": "",
+      "zh": ""
+    },
+    "games.future1.footnote": {
+      "ctx": "로드맵 카드1 각주 (영문+한글 혼합); 'Coming later ·' 유지, 설명만 번역",
+      "ko": "Coming later · 준비 중",
+      "en": "",
+      "zh": ""
+    },
+    "games.future1.label": {
+      "ctx": "로드맵 카드1 모노 라벨; 'TBA'(미정 약어) 유지",
+      "ko": "",
+      "en": "Project · TBA",
+      "zh": ""
+    },
+    "games.future1.stamp": {
+      "ctx": "로드맵 카드1 스탬프, 'No.02 ·' 유지 'Future'만 번역",
+      "ko": "",
+      "en": "No.02 · Future",
+      "zh": ""
+    },
+    "games.future1.title": {
+      "ctx": "로드맵 카드1 제목",
+      "ko": "",
+      "en": "Future Project",
+      "zh": ""
+    },
+    "games.future2.desc": {
+      "ctx": "로드맵 카드2 설명",
+      "ko": "스튜디오 내부의 짧은 실험들. 일부는 새로운 게임의 씨앗이 되기도 합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.future2.footnote": {
+      "ctx": "로드맵 카드2 각주",
+      "ko": "",
+      "en": "Open someday",
+      "zh": ""
+    },
+    "games.future2.label": {
+      "ctx": "로드맵 카드2 라벨 겸 제목 (label/title 동일 텍스트)",
+      "ko": "",
+      "en": "Prototype Archive",
+      "zh": ""
+    },
+    "games.future2.stamp": {
+      "ctx": "로드맵 카드2 스탬프, 'No.03 ·' 유지 'Lab'만 번역",
+      "ko": "",
+      "en": "No.03 · Lab",
+      "zh": ""
+    },
+    "games.future3.desc": {
+      "ctx": "로드맵 카드3 설명, 따옴표(“”)와 빈칸(____) 유지",
+      "ko": "“만약 ____ 게임이 있다면 어떨까?” 라는 가벼운 질문에서 시작되는 작업들.",
+      "en": "",
+      "zh": ""
+    },
+    "games.future3.footnote": {
+      "ctx": "로드맵 카드3 각주",
+      "ko": "",
+      "en": "Sketching",
+      "zh": ""
+    },
+    "games.future3.label": {
+      "ctx": "로드맵 카드3 라벨 겸 제목 (label/title 동일 텍스트)",
+      "ko": "",
+      "en": "New Experiment",
+      "zh": ""
+    },
+    "games.future3.stamp": {
+      "ctx": "로드맵 카드3 스탬프, 'No.04 ·' 유지 'Idea'만 번역",
+      "ko": "",
+      "en": "No.04 · Idea",
+      "zh": ""
+    },
+    "games.futureProjects.experiment.description": {
+      "ctx": "새 실험 설명 (한국어). 큰따옴표(“ ”)와 '____' 빈칸 표기 보존",
+      "ko": "“만약 ____ 게임이 있다면 어떨까?” 라는 가벼운 질문에서 시작되는 작업들.",
+      "en": "",
+      "zh": ""
+    },
+    "games.futureProjects.experiment.footnote": {
+      "ctx": "새 실험 각주",
+      "ko": "",
+      "en": "Sketching",
+      "zh": ""
+    },
+    "games.futureProjects.future.label": {
+      "ctx": "향후 프로젝트 라벨: 'Project ·' + TBA",
+      "ko": "",
+      "en": "Project · TBA",
+      "zh": ""
+    },
+    "games.futureProjects.future.stamp": {
+      "ctx": "향후 프로젝트 스탬프 라벨: 'No.02 ·' + 'Future'",
+      "ko": "",
+      "en": "No.02 · Future",
+      "zh": ""
+    },
+    "games.futureProjects.prototype.description": {
+      "ctx": "프로토타입 아카이브 설명 (한국어)",
+      "ko": "스튜디오 내부의 짧은 실험들. 일부는 새로운 게임의 씨앗이 되기도 합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.index.headline": {
+      "ctx": "게임 인덱스 페이지 대형 헤드라인. 'worlds & experiments.' 부분은 이탤릭 스타일",
+      "ko": "",
+      "en": "A growing shelf of worlds & experiments.",
+      "zh": ""
+    },
+    "games.index.keepWatching.headline": {
+      "ctx": "하단 CTA 섹션 헤드라인. 'will live here.' 부분은 serif 이탤릭 강조",
+      "ko": "",
+      "en": "More games will live here.",
+      "zh": ""
+    },
+    "games.index.keepWatching.kicker": {
+      "ctx": "하단 CTA 섹션 키커: '/ keep watching' 슬래시 스타일 영문 태그라인",
+      "ko": "",
+      "en": "/ keep watching",
+      "zh": ""
+    },
+    "games.index.kicker": {
+      "ctx": "게임 인덱스 페이지 헤더 키커: '/ games ·' 슬래시 스타일 유지, 뒤 한국어 설명만 번역",
+      "ko": "/ games · 게임",
+      "en": "",
+      "zh": ""
+    },
+    "games.index.lede": {
+      "ctx": "게임 인덱스 페이지 도입 문단. 'Mongma Studio' 브랜드명은 고정",
+      "ko": "Mongma Studio가 만들고 있는, 또는 만들 예정인 게임들. 지금은 단 한 편이지만, 곧 더 많은 세계가 이 선반에 오릅니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.index.supportCta": {
+      "ctx": "하단 CTA 버튼: 스튜디오 후원 페이지 링크",
+      "ko": "",
+      "en": "Support the studio",
+      "zh": ""
+    },
+    "games.items.prototypeArchive.genre": {
+      "ctx": "Prototype Archive 장르 값. 태그 'Internal · Lab'와 동일 텍스트",
+      "ko": "",
+      "en": "Internal · Lab",
+      "zh": ""
+    },
+    "games.items.prototypeArchive.number": {
+      "ctx": "Prototype Archive 카드 번호 라벨",
+      "ko": "",
+      "en": "No.03",
+      "zh": ""
+    },
+    "games.items.prototypeArchive.shortDescription": {
+      "ctx": "Prototype Archive 카드 설명 (한국어, description과 동일 텍스트)",
+      "ko": "스튜디오 내부의 짧은 실험들을 모아두는 선반. 언젠가 일부가 공개될 수 있습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.prototypeArchive.statusLabel": {
+      "ctx": "Prototype Archive 상태 라벨. 영문 'Lab ·' + 한국어 혼합, 전체 보존",
+      "ko": "Lab · 내부 실험",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.prototypeArchive.title": {
+      "ctx": "Prototype Archive 카드 제목 (placeholderLabel 및 futureProjects 라벨/제목과 동일 텍스트)",
+      "ko": "",
+      "en": "Prototype Archive",
+      "zh": ""
+    },
+    "games.items.revenant.description": {
+      "ctx": "Revenant Survivors 상세 설명. 영문+한국어 혼합, 전체 보존",
+      "ko": "Absorb souls, steal the power of bosses, and survive through waves of darkness. 보스의 힘을 빼앗고, 영혼을 흡수하며 성장하는 액션 호드 서바이벌 로그라이트.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.features.boss.description": {
+      "ctx": "Revenant Survivors 특징 설명 (한국어)",
+      "ko": "보스를 쓰러뜨리면 그들의 핵심 능력을 빼앗아 사용할 수 있습니다. 매 런마다 다른 손, 다른 검.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.features.boss.num": {
+      "ctx": "Revenant Survivors 특징 번호 라벨: '02 ·' 형태, 'Boss' 키워드",
+      "ko": "",
+      "en": "02 · Boss",
+      "zh": ""
+    },
+    "games.items.revenant.features.boss.title": {
+      "ctx": "Revenant Survivors 특징 제목",
+      "ko": "",
+      "en": "Boss Power System",
+      "zh": ""
+    },
+    "games.items.revenant.features.build.description": {
+      "ctx": "Revenant Survivors 특징 설명 (한국어)",
+      "ko": "매 선택이 빌드를 흔듭니다. 정해진 정답 없이, 매번 새로 손에 익는 캐릭터를 만드세요.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.features.build.num": {
+      "ctx": "Revenant Survivors 특징 번호 라벨: '04 ·' 형태, 'Build' 키워드",
+      "ko": "",
+      "en": "04 · Build",
+      "zh": ""
+    },
+    "games.items.revenant.features.build.title": {
+      "ctx": "Revenant Survivors 특징 제목",
+      "ko": "",
+      "en": "Endless Build Craft",
+      "zh": ""
+    },
+    "games.items.revenant.features.soul.description": {
+      "ctx": "Revenant Survivors 특징 설명 (한국어)",
+      "ko": "적을 처치할 때마다 영혼을 흡수해 점점 더 강해집니다. 모든 죽음이 다음 한 발의 거름이 됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.features.soul.num": {
+      "ctx": "Revenant Survivors 특징 번호 라벨: '01 ·' 형태, 'Soul' 키워드",
+      "ko": "",
+      "en": "01 · Soul",
+      "zh": ""
+    },
+    "games.items.revenant.features.soul.title": {
+      "ctx": "Revenant Survivors 특징 제목",
+      "ko": "",
+      "en": "Soul Absorption",
+      "zh": ""
+    },
+    "games.items.revenant.features.synergy.description": {
+      "ctx": "Revenant Survivors 특징 설명 (한국어)",
+      "ko": "속성과 스킬을 쌓아 폭발적인 연쇄 반응을 일으키세요. 화면이 무너질 때 비로소 시작입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.features.synergy.num": {
+      "ctx": "Revenant Survivors 특징 번호 라벨: '03 ·' 형태, 'Synergy' 키워드",
+      "ko": "",
+      "en": "03 · Synergy",
+      "zh": ""
+    },
+    "games.items.revenant.features.synergy.title": {
+      "ctx": "Revenant Survivors 특징 제목",
+      "ko": "",
+      "en": "Explosive Skill Synergy",
+      "zh": ""
+    },
+    "games.items.revenant.languages": {
+      "ctx": "Revenant Survivors 지원 언어 목록 값. 한/영/중 혼합, '·' 구분자와 표기 보존",
+      "ko": "한국어 · English · 简体中文",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.number": {
+      "ctx": "Revenant Survivors 카드 번호 라벨",
+      "ko": "",
+      "en": "No.01",
+      "zh": ""
+    },
+    "games.items.revenant.setting": {
+      "ctx": "Revenant Survivors 세계관/배경 값",
+      "ko": "",
+      "en": "Dark Fantasy",
+      "zh": ""
+    },
+    "games.items.revenant.shortDescription": {
+      "ctx": "Revenant Survivors 카드 짧은 설명 (한국어)",
+      "ko": "보스의 힘을 빼앗고, 영혼을 흡수하며 성장하는 액션 호드 서바이벌 로그라이트.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.tagline": {
+      "ctx": "Revenant Survivors 태그라인. 영문 — 한국어 혼합, ' — ' 구분자와 전체 보존",
+      "ko": "Steal the power of fallen bosses. Grow through souls. Survive the revenant night. — 보스의 힘을 빼앗고, 영혼을 흡수하며, 끝나지 않는 어둠 속에서 살아남으세요.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.revenant.tags.actionRoguelite": {
+      "ctx": "Revenant Survivors 태그",
+      "ko": "",
+      "en": "Action Roguelite",
+      "zh": ""
+    },
+    "games.items.revenant.tags.bossPowers": {
+      "ctx": "Revenant Survivors 태그",
+      "ko": "",
+      "en": "Boss Powers",
+      "zh": ""
+    },
+    "games.items.revenant.tags.skillSynergy": {
+      "ctx": "Revenant Survivors 태그 ('Steam' 태그는 브랜드명으로 제외)",
+      "ko": "",
+      "en": "Skill Synergy",
+      "zh": ""
+    },
+    "games.items.revenant.tags.survivorsLike": {
+      "ctx": "Revenant Survivors 태그",
+      "ko": "",
+      "en": "Survivors-like",
+      "zh": ""
+    },
+    "games.items.untitled02.number": {
+      "ctx": "Untitled · 02 카드 번호 라벨",
+      "ko": "",
+      "en": "No.02",
+      "zh": ""
+    },
+    "games.items.untitled02.placeholderLabel": {
+      "ctx": "플레이스홀더 카드 아트 라벨. futureProjects의 'Future Project' 제목과 동일 텍스트",
+      "ko": "",
+      "en": "Future Project",
+      "zh": ""
+    },
+    "games.items.untitled02.shortDescription": {
+      "ctx": "Untitled · 02 카드 설명 (한국어, description과 동일 텍스트)",
+      "ko": "다음 프로젝트는 아직 비공개입니다. 더 많은 정보가 곧 이 자리에 추가됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.untitled02.statusLabel": {
+      "ctx": "Untitled · 02 상태 라벨. 영문 'Future ·' + 한국어 혼합, 전체 보존",
+      "ko": "Future · 준비 중",
+      "en": "",
+      "zh": ""
+    },
+    "games.items.untitled02.tags.genreTba": {
+      "ctx": "Untitled · 02 태그: 'Genre ·' 라벨 + TBA",
+      "ko": "",
+      "en": "Genre · TBA",
+      "zh": ""
+    },
+    "games.items.untitled02.tags.platformTba": {
+      "ctx": "Untitled · 02 태그: 'Platform ·' 라벨 + TBA",
+      "ko": "",
+      "en": "Platform · TBA",
+      "zh": ""
+    },
+    "games.items.untitled02.title": {
+      "ctx": "두 번째(비공개) 프로젝트 카드 제목",
+      "ko": "",
+      "en": "Untitled · 02",
+      "zh": ""
+    },
+    "games.revenant.description": {
+      "ctx": "피처드가 읽는 게임 설명 (영문+한글 혼합, 전체 번역)",
+      "ko": "Absorb souls, steal the power of bosses, and survive through waves of darkness. 보스의 힘을 빼앗고, 영혼을 흡수하며 성장하는 액션 호드 서바이벌 로그라이트.",
+      "en": "",
+      "zh": ""
+    },
+    "games.revenant.genre": {
+      "ctx": "피처드가 읽는 게임 장르 값",
+      "ko": "",
+      "en": "Action Horde Survival Roguelite",
+      "zh": ""
+    },
+    "games.revenant.platform": {
+      "ctx": "피처드가 읽는 게임 플랫폼 값; 'Steam' 브랜드 유지",
+      "ko": "",
+      "en": "PC · Steam",
+      "zh": ""
+    },
+    "games.revenant.statusLabel": {
+      "ctx": "피처드가 읽는 게임 상태 값 (한 문자열로 번역)",
+      "ko": "",
+      "en": "In Development · Coming Soon",
+      "zh": ""
+    },
+    "home.community.aria": {
+      "ctx": "커뮤니티 채널 nav의 aria-label (기본값)",
+      "ko": "",
+      "en": "Community channels",
+      "zh": ""
+    },
+    "home.community.headlineBefore": {
+      "ctx": "커뮤니티 섹션 제목 앞부분 (기본값)",
+      "ko": "",
+      "en": "Find us",
+      "zh": ""
+    },
+    "home.community.headlineItalic": {
+      "ctx": "커뮤니티 섹션 제목 이탤릭 부분 (기본값)",
+      "ko": "",
+      "en": "around the web.",
+      "zh": ""
+    },
+    "home.community.kicker": {
+      "ctx": "커뮤니티 키커 (기본값): '/ community ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ community · 커뮤니티",
+      "en": "",
+      "zh": ""
+    },
+    "home.community.lede": {
+      "ctx": "커뮤니티 섹션 소개 문단 (기본값)",
+      "ko": "아이콘 없이, 글자 그대로의 채널들. 보고 싶은 곳에서 만나요.",
+      "en": "",
+      "zh": ""
+    },
+    "home.cta.allChannels": {
+      "ctx": "하단 문의 CTA 버튼 라벨",
+      "ko": "",
+      "en": "All contact channels",
+      "zh": ""
+    },
+    "home.cta.headline": {
+      "ctx": "하단 문의 CTA 제목 앞부분, '·'와 em대시(—) 유지",
+      "ko": "",
+      "en": "Press · creator · business —",
+      "zh": ""
+    },
+    "home.cta.headlineItalic": {
+      "ctx": "하단 문의 CTA 제목 이탤릭 부분",
+      "ko": "",
+      "en": "say hello.",
+      "zh": ""
+    },
+    "home.cta.kicker": {
+      "ctx": "하단 문의 CTA 키커: '/ inquiries ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ inquiries · 문의",
+      "en": "",
+      "zh": ""
+    },
+    "home.featured.cornerLabel": {
+      "ctx": "피처드 이미지 코너 라벨, 뒤에 게임번호(No.01)가 붙음 ('·' 와 번호는 고정)",
+      "ko": "",
+      "en": "Featured ·",
+      "zh": ""
+    },
+    "home.featured.keyArtAlt": {
+      "ctx": "피처드 키아트 이미지 alt; 게임 제목(변수) 뒤에 붙는 'key art'만 번역",
+      "ko": "",
+      "en": "key art",
+      "zh": ""
+    },
+    "home.featured.kicker": {
+      "ctx": "피처드 게임 키커: '/ featured game ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ featured game · 진행 중인 프로젝트",
+      "en": "",
+      "zh": ""
+    },
+    "home.future.headline": {
+      "ctx": "퓨처 게임 섹션 제목 앞부분",
+      "ko": "",
+      "en": "More worlds,",
+      "zh": ""
+    },
+    "home.future.headlineItalic": {
+      "ctx": "퓨처 게임 섹션 제목 이탤릭 부분",
+      "ko": "",
+      "en": "being sketched.",
+      "zh": ""
+    },
+    "home.future.kicker": {
+      "ctx": "퓨처 게임 키커: '/ roadmap ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ roadmap · 다음 세계들",
+      "en": "",
+      "zh": ""
+    },
+    "home.future.lede": {
+      "ctx": "퓨처 게임 섹션 소개 문단",
+      "ko": "몽마 스튜디오는 한 가지 장르에 묶이지 않습니다. 다음 프로젝트는 어쩌면 완전히 다른 분위기일 수도 있어요.",
+      "en": "",
+      "zh": ""
+    },
+    "home.hero.collage.featuredMeta": {
+      "ctx": "히어로 콜라주 키비주얼 카드 메타 라벨, 'No.01' 번호 유지",
+      "ko": "",
+      "en": "Featured Game · No.01",
+      "zh": ""
+    },
+    "home.hero.collage.keyVisualAlt": {
+      "ctx": "히어로 키비주얼 이미지 alt; 'Revenant Survivors'는 브랜드 고정, 'key visual'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors key visual",
+      "zh": ""
+    },
+    "home.hero.collage.logoAlt": {
+      "ctx": "히어로 로고 이미지 alt; 'Mongma Studio'는 브랜드 고정, 'Logo'만 번역",
+      "ko": "",
+      "en": "Mongma Studio Logo",
+      "zh": ""
+    },
+    "home.hero.collage.studioMark": {
+      "ctx": "히어로 콜라주 로고 카드 메타 라벨",
+      "ko": "",
+      "en": "Studio Mark",
+      "zh": ""
+    },
+    "home.hero.cta.viewGames": {
+      "ctx": "히어로 CTA 버튼 (뒤에 화살표 →)",
+      "ko": "",
+      "en": "View Our Games",
+      "zh": ""
+    },
+    "home.hero.cta.viewRevenant": {
+      "ctx": "히어로 CTA 버튼; 'Revenant Survivors'는 브랜드 고정, 'View'만 번역",
+      "ko": "",
+      "en": "View Revenant Survivors",
+      "zh": ""
+    },
+    "home.hero.headline1": {
+      "ctx": "히어로 대형 헤드라인 1행",
+      "ko": "",
+      "en": "Small studio.",
+      "zh": ""
+    },
+    "home.hero.headline2Italic": {
+      "ctx": "히어로 헤드라인 2행 (이탤릭)",
+      "ko": "",
+      "en": "Strange ideas.",
+      "zh": ""
+    },
+    "home.hero.headline3": {
+      "ctx": "히어로 헤드라인 3행",
+      "ko": "",
+      "en": "Playful worlds.",
+      "zh": ""
+    },
+    "home.hero.lede": {
+      "ctx": "히어로 소개 문단",
+      "ko": "몽마 스튜디오는 독특한 세계와 오래 남는 플레이를 만드는 작은 인디 게임 스튜디오입니다. 우리는 큰 회사의 공식보다, 손으로 다듬은 시스템과 이야기를 더 좋아합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.hero.noteBody": {
+      "ctx": "히어로 노트 카드 본문, 따옴표(“”) 유지",
+      "ko": "“달이 부서진 자리에서, 새로운 세계를 줍는다.”",
+      "en": "",
+      "zh": ""
+    },
+    "home.hero.noteLabel": {
+      "ctx": "히어로 우측 노트 카드의 모노 라벨",
+      "ko": "",
+      "en": "Field note 003",
+      "zh": ""
+    },
+    "home.hero.sticker1": {
+      "ctx": "히어로 좌측 스티커 라벨",
+      "ko": "",
+      "en": "Indie Game Studio",
+      "zh": ""
+    },
+    "home.hero.sticker2": {
+      "ctx": "히어로 스티커 라벨, 'Est.'=설립, Seoul=도시",
+      "ko": "",
+      "en": "Est. 2026 · Seoul",
+      "zh": ""
+    },
+    "home.hero.sticker3": {
+      "ctx": "히어로 노란색 강조 스티커 라벨",
+      "ko": "",
+      "en": "In Development",
+      "zh": ""
+    },
+    "home.media.headlineItalic": {
+      "ctx": "미디어 섹션 제목 이탤릭 부분; 전체 제목은 'Revenant Survivors — First Look.' (브랜드 고정)",
+      "ko": "",
+      "en": "First Look.",
+      "zh": ""
+    },
+    "home.media.iframeTitle": {
+      "ctx": "트레일러 iframe title; 'Revenant Survivors' 브랜드 고정, 'Trailer'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors Trailer",
+      "zh": ""
+    },
+    "home.media.kicker": {
+      "ctx": "트레일러 키커: '/ trailer ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ trailer · 공식 트레일러",
+      "en": "",
+      "zh": ""
+    },
+    "home.media.lede": {
+      "ctx": "미디어 섹션 소개 문단",
+      "ko": "첫 번째 트레일러. 게임의 분위기와 코어 루프를 짧게 담았습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.headline": {
+      "ctx": "뉴스 섹션 제목 (소스의 &amp;는 & 로 렌더)",
+      "ko": "",
+      "en": "Field notes & updates",
+      "zh": ""
+    },
+    "home.news.item1.body": {
+      "ctx": "뉴스 카드1 본문 (브랜드 Revenant Survivors/Steam 유지)",
+      "ko": "Revenant Survivors의 Steam 페이지가 공식 오픈했습니다. 위시리스트로 응원해 주세요.",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.item1.date": {
+      "ctx": "뉴스 카드 날짜 (item1/item2 동일)",
+      "ko": "",
+      "en": "2026 · 04 · 22",
+      "zh": ""
+    },
+    "home.news.item1.more": {
+      "ctx": "뉴스 카드1 더보기 링크, 화살표 → 유지",
+      "ko": "",
+      "en": "Read note →",
+      "zh": ""
+    },
+    "home.news.item1.title": {
+      "ctx": "뉴스 카드1 제목; 'Steam' 브랜드 유지",
+      "ko": "",
+      "en": "Steam page is live",
+      "zh": ""
+    },
+    "home.news.item2.body": {
+      "ctx": "뉴스 카드2 본문",
+      "ko": "게임의 분위기와 핵심 루프를 담은 첫 번째 트레일러를 공개했습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.item2.more": {
+      "ctx": "뉴스 카드2 더보기 링크; 'YouTube' 브랜드 유지, 화살표 → 유지",
+      "ko": "",
+      "en": "Watch on YouTube →",
+      "zh": ""
+    },
+    "home.news.item2.title": {
+      "ctx": "뉴스 카드2 제목",
+      "ko": "",
+      "en": "First trailer released",
+      "zh": ""
+    },
+    "home.news.item3.body": {
+      "ctx": "뉴스 카드3 본문",
+      "ko": "플레이 가능한 데모 빌드의 일정과 범위를 곧 공유할 예정입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.item3.date": {
+      "ctx": "뉴스 카드3 날짜; 'TBA'(미정) 유지",
+      "ko": "",
+      "en": "2026 · TBA",
+      "zh": ""
+    },
+    "home.news.item3.title": {
+      "ctx": "뉴스 카드3 제목",
+      "ko": "",
+      "en": "Demo announcement",
+      "zh": ""
+    },
+    "home.news.item4.body": {
+      "ctx": "뉴스 카드4 본문, 따옴표(“”) 유지",
+      "ko": "“보스의 힘을 빼앗는다”는 한 문장이 어떻게 핵심 시스템으로 자라났는지 기록한 노트.",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.item4.date": {
+      "ctx": "뉴스 카드4 날짜 겸 라벨, 'Devlog ·' 유지 번호(001) 유지",
+      "ko": "",
+      "en": "Devlog · 001",
+      "zh": ""
+    },
+    "home.news.item4.more": {
+      "ctx": "뉴스 카드4 더보기 링크, 화살표 → 유지",
+      "ko": "",
+      "en": "Read devlog →",
+      "zh": ""
+    },
+    "home.news.item4.title": {
+      "ctx": "뉴스 카드4 제목",
+      "ko": "",
+      "en": "How souls became a system",
+      "zh": ""
+    },
+    "home.news.kicker": {
+      "ctx": "뉴스 키커: '/ news ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ news · 새 소식",
+      "en": "",
+      "zh": ""
+    },
+    "home.news.lede": {
+      "ctx": "뉴스 섹션 소개 문단",
+      "ko": "스튜디오에서 일어나는 작은 일들. 데모, 개발 노트, 페이지 오픈 등.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.bigtext1": {
+      "ctx": "스튜디오 큰 문단 1행",
+      "ko": "한 명의 손으로 시작해, 몇 번이고 다시 그리는 작은 팀.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.bigtext2": {
+      "ctx": "스튜디오 큰 문단 2행 앞부분 (끝 공백 유지, 뒤에 강조어 이어짐)",
+      "ko": "우리가 만드는 건 기능이 아니라 ",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.bigtext2Em": {
+      "ctx": "스튜디오 큰 문단 2행 강조(em) 부분",
+      "ko": "오래 기억되는 순간",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.bigtext2End": {
+      "ctx": "스튜디오 큰 문단 2행 끝부분 (강조어 뒤 종결)",
+      "ko": "입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.card1.desc": {
+      "ctx": "스튜디오 카드1 설명",
+      "ko": "장르의 클리셰를 빌리지 않고, 우리만의 분위기와 규칙을 가진 세계를 짭니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.card1.num": {
+      "ctx": "스튜디오 카드1 번호 라벨, '01 ·' 번호 유지 'World'만 번역",
+      "ko": "",
+      "en": "01 · World",
+      "zh": ""
+    },
+    "home.studio.card1.title": {
+      "ctx": "스튜디오 카드1 제목",
+      "ko": "",
+      "en": "Original Worlds",
+      "zh": ""
+    },
+    "home.studio.card2.desc": {
+      "ctx": "스튜디오 카드2 설명",
+      "ko": "한 번 플레이하고 잊히지 않는, 손에 남는 시스템을 만듭니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.card2.num": {
+      "ctx": "스튜디오 카드2 번호 라벨, '02 ·' 유지 'System'만 번역",
+      "ko": "",
+      "en": "02 · System",
+      "zh": ""
+    },
+    "home.studio.card2.title": {
+      "ctx": "스튜디오 카드2 제목",
+      "ko": "",
+      "en": "Memorable Systems",
+      "zh": ""
+    },
+    "home.studio.card3.desc": {
+      "ctx": "스튜디오 카드3 설명",
+      "ko": "실패해도 즐거운 작은 실험들. 프로토타입을 두려워하지 않습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.card3.num": {
+      "ctx": "스튜디오 카드3 번호 라벨, '03 ·' 유지 'Play'만 번역",
+      "ko": "",
+      "en": "03 · Play",
+      "zh": ""
+    },
+    "home.studio.card3.title": {
+      "ctx": "스튜디오 카드3 제목",
+      "ko": "",
+      "en": "Playful Experiments",
+      "zh": ""
+    },
+    "home.studio.card4.desc": {
+      "ctx": "스튜디오 카드4 설명",
+      "ko": "유행보다는 취향. 공식보다는 직감. 작게, 그러나 진심으로.",
+      "en": "",
+      "zh": ""
+    },
+    "home.studio.card4.num": {
+      "ctx": "스튜디오 카드4 번호 라벨, '04 ·' 유지 'Spirit'만 번역",
+      "ko": "",
+      "en": "04 · Spirit",
+      "zh": ""
+    },
+    "home.studio.card4.title": {
+      "ctx": "스튜디오 카드4 제목",
+      "ko": "",
+      "en": "Indie Spirit",
+      "zh": ""
+    },
+    "home.studio.headline": {
+      "ctx": "스튜디오 소개 섹션 제목 앞부분",
+      "ko": "",
+      "en": "We make games",
+      "zh": ""
+    },
+    "home.studio.headlineItalic": {
+      "ctx": "스튜디오 소개 섹션 제목 이탤릭 부분",
+      "ko": "",
+      "en": "with personality.",
+      "zh": ""
+    },
+    "home.studio.kicker": {
+      "ctx": "스튜디오 소개 키커: '/ studio ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ studio · 스튜디오 소개",
+      "en": "",
+      "zh": ""
+    },
+    "lang.en.label": {
+      "ctx": "언어 드롭다운 항목: 영어 언어명 (원어 유지 권장).",
+      "ko": "English",
+      "en": "English",
+      "zh": "English",
+      "fixed": true
+    },
+    "lang.en.sub": {
+      "ctx": "언어 드롭다운 항목: 영어의 보조 표기(small).",
+      "ko": "영어",
+      "en": "",
+      "zh": ""
+    },
+    "lang.heading": {
+      "ctx": "언어 드롭다운 섹션 헤더 (하드코딩 영문).",
+      "ko": "",
+      "en": "Language",
+      "zh": ""
+    },
+    "lang.ko.label": {
+      "ctx": "언어 드롭다운 항목: 한국어 언어명 (원어 유지 권장).",
+      "ko": "한국어",
+      "en": "한국어",
+      "zh": "한국어",
+      "fixed": true
+    },
+    "lang.ko.sub": {
+      "ctx": "언어 드롭다운 항목: 한국어의 보조 표기(small).",
+      "ko": "",
+      "en": "Korean",
+      "zh": ""
+    },
+    "lang.zh.label": {
+      "ctx": "언어 드롭다운 항목: 중국어 간체 언어명. 원문 '简体中文' (한자, 보통 원어 유지). ko/en 해당 없음.",
+      "ko": "简体中文",
+      "en": "简体中文",
+      "zh": "简体中文",
+      "fixed": true
+    },
+    "lang.zh.sub": {
+      "ctx": "언어 드롭다운 항목: 중국어 간체의 보조 표기(small).",
+      "ko": "중국어 간체",
+      "en": "",
+      "zh": ""
+    },
+    "lightbox.close": {
+      "ctx": "라이트박스 닫기 버튼의 표시 라벨. ✕ 글리프는 그대로 유지하고 'Close'만 번역 (aria는 common.ui.close)",
+      "ko": "",
+      "en": "Close ✕",
+      "zh": ""
+    },
+    "lightbox.imageViewer": {
+      "ctx": "라이트박스(이미지 뷰어) 다이얼로그의 aria-label",
+      "ko": "",
+      "en": "Image viewer",
+      "zh": ""
+    },
+    "lightbox.next": {
+      "ctx": "라이트박스 다음 이미지 버튼의 aria-label",
+      "ko": "",
+      "en": "Next",
+      "zh": ""
+    },
+    "lightbox.nextLabel": {
+      "ctx": "라이트박스 다음 버튼의 표시 라벨. → 화살표는 유지하고 'Next'만 번역",
+      "ko": "",
+      "en": "Next →",
+      "zh": ""
+    },
+    "lightbox.prevLabel": {
+      "ctx": "라이트박스 이전 버튼의 표시 라벨. ← 화살표는 유지하고 'Prev'만 번역",
+      "ko": "",
+      "en": "← Prev",
+      "zh": ""
+    },
+    "lightbox.previous": {
+      "ctx": "라이트박스 이전 이미지 버튼의 aria-label",
+      "ko": "",
+      "en": "Previous",
+      "zh": ""
+    },
+    "meta.description": {
+      "ctx": "메타데이터 설명문. 영문 소개 + 한글 소개 혼합. 'Mongma Studio' 고정, 마침표/em-dash 유지.",
+      "ko": "Mongma Studio — a small indie game studio. 몽마 스튜디오. 손으로 다듬은 세계를 만듭니다.",
+      "en": "",
+      "zh": ""
+    },
+    "meta.title": {
+      "ctx": "메타데이터 페이지 제목. 'Mongma Studio —' 브랜드 고정, '몽마 스튜디오' 부분만 로캘별 번역. em-dash 유지.",
+      "ko": "Mongma Studio — 몽마 스튜디오",
+      "en": "",
+      "zh": ""
+    },
+    "mobileMenu.languageLabel": {
+      "ctx": "모바일 메뉴 하단 언어 섹션 라벨. 'Language ·' 스타일 유지, 영문/한글 혼합.",
+      "ko": "Language · 언어",
+      "en": "",
+      "zh": ""
+    },
+    "nav.aria.logoHome": {
+      "ctx": "로고 링크 aria-label. 'Mongma Studio —' 브랜드 접두어 고정, 'Home' 개념만 번역.",
+      "ko": "",
+      "en": "Mongma Studio — Home",
+      "zh": ""
+    },
+    "nav.aria.openMenu": {
+      "ctx": "모바일 햄버거 버튼 aria-label.",
+      "ko": "",
+      "en": "Open menu",
+      "zh": ""
+    },
+    "nav.aria.primary": {
+      "ctx": "주 네비게이션 <nav> aria-label.",
+      "ko": "",
+      "en": "Primary",
+      "zh": ""
+    },
+    "nav.contact": {
+      "ctx": "상단 네비게이션 메뉴 항목 (i18n).",
+      "ko": "",
+      "en": "Contact",
+      "zh": ""
+    },
+    "nav.dropdownGames": {
+      "ctx": "데스크톱 네비게이션 게임 드롭다운 내부 섹션 헤더 (하드코딩 영문, i18n 아님).",
+      "ko": "",
+      "en": "Games",
+      "zh": ""
+    },
+    "nav.games": {
+      "ctx": "상단 네비게이션 게임 드롭다운 토글 라벨 (i18n).",
+      "ko": "",
+      "en": "Games",
+      "zh": ""
+    },
+    "nav.home": {
+      "ctx": "상단 네비게이션 메뉴 항목 (i18n). 현재 한/영 모두 'Home'으로 표시됨.",
+      "ko": "",
+      "en": "Home",
+      "zh": ""
+    },
+    "nav.menu.allGames": {
+      "ctx": "게임 드롭다운 / 모바일 메뉴 하위 항목 라벨.",
+      "ko": "",
+      "en": "All Games",
+      "zh": ""
+    },
+    "nav.menu.allGamesSmall": {
+      "ctx": "데스크톱 게임 드롭다운 'All Games' 항목의 보조 설명(small).",
+      "ko": "전체 게임",
+      "en": "",
+      "zh": ""
+    },
+    "nav.menu.futureProjects": {
+      "ctx": "게임 드롭다운 / 모바일 메뉴 하위 항목 라벨.",
+      "ko": "",
+      "en": "Future Projects",
+      "zh": ""
+    },
+    "nav.menu.futureProjectsSmall": {
+      "ctx": "데스크톱 게임 드롭다운 'Future Projects' 항목의 보조 설명(small).",
+      "ko": "준비 중",
+      "en": "",
+      "zh": ""
+    },
+    "nav.menu.revenantStatus": {
+      "ctx": "데스크톱 게임 드롭다운 'Revenant Survivors' 항목의 보조 설명(개발 상태).",
+      "ko": "",
+      "en": "In Development",
+      "zh": ""
+    },
+    "nav.menuButton": {
+      "ctx": "모바일 메뉴를 여는 햄버거 버튼 표시 텍스트.",
+      "ko": "",
+      "en": "Menu",
+      "zh": ""
+    },
+    "nav.pressKit": {
+      "ctx": "상단 네비게이션 메뉴 항목 (i18n).",
+      "ko": "",
+      "en": "Press Kit",
+      "zh": ""
+    },
+    "nav.support": {
+      "ctx": "상단 네비게이션 메뉴 항목 (i18n).",
+      "ko": "",
+      "en": "Support",
+      "zh": ""
+    },
+    "press.downloads.heading": {
+      "ctx": "다운로드 섹션 제목",
+      "ko": "",
+      "en": "Download assets",
+      "zh": ""
+    },
+    "press.downloads.item1.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨",
+      "ko": "",
+      "en": "Bundle",
+      "zh": ""
+    },
+    "press.downloads.item1.size": {
+      "ctx": "다운로드 카드 사양 (파일 정보). 'All assets' 단어만 번역, ZIP/TBA/MB 유지",
+      "ko": "",
+      "en": "All assets · ZIP · ~ TBA MB",
+      "zh": ""
+    },
+    "press.downloads.item1.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download All",
+      "zh": ""
+    },
+    "press.downloads.item2.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨",
+      "ko": "",
+      "en": "Brand",
+      "zh": ""
+    },
+    "press.downloads.item2.size": {
+      "ctx": "다운로드 카드 사양. 'light/dark' 단어만 번역, PNG/SVG 유지",
+      "ko": "",
+      "en": "PNG · SVG · light/dark",
+      "zh": ""
+    },
+    "press.downloads.item2.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Logos",
+      "zh": ""
+    },
+    "press.downloads.item3.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨",
+      "ko": "",
+      "en": "Art",
+      "zh": ""
+    },
+    "press.downloads.item3.size": {
+      "ctx": "다운로드 카드 사양. 'variants' 단어만 번역, 해상도/4K 유지",
+      "ko": "",
+      "en": "1920×1080 · 4K · variants",
+      "zh": ""
+    },
+    "press.downloads.item3.title": {
+      "ctx": "다운로드 카드 제목 (히어로 버튼과 동일 문구)",
+      "ko": "",
+      "en": "Download Key Art",
+      "zh": ""
+    },
+    "press.downloads.item4.size": {
+      "ctx": "다운로드 카드 사양",
+      "ko": "",
+      "en": "Header · main · small",
+      "zh": ""
+    },
+    "press.downloads.item4.title": {
+      "ctx": "다운로드 카드 제목. 'Steam' 라벨은 브랜드라 미번역",
+      "ko": "",
+      "en": "Download Capsule Images",
+      "zh": ""
+    },
+    "press.downloads.item5.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨",
+      "ko": "",
+      "en": "In-game",
+      "zh": ""
+    },
+    "press.downloads.item5.size": {
+      "ctx": "다운로드 카드 사양. 'pack' 단어만 번역, PNG/TBA 유지",
+      "ko": "",
+      "en": "PNG · TBA pack",
+      "zh": ""
+    },
+    "press.downloads.item5.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Screenshots",
+      "zh": ""
+    },
+    "press.downloads.item6.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨",
+      "ko": "",
+      "en": "Video",
+      "zh": ""
+    },
+    "press.downloads.item6.size": {
+      "ctx": "다운로드 카드 사양 (포맷 정보, 거의 미번역)",
+      "ko": "",
+      "en": "MP4 · 1080p · 4K",
+      "zh": ""
+    },
+    "press.downloads.item6.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Trailer",
+      "zh": ""
+    },
+    "press.downloads.item7.lbl": {
+      "ctx": "다운로드 카드 카테고리 라벨 (Document, 3개 카드 공통)",
+      "ko": "",
+      "en": "Document",
+      "zh": ""
+    },
+    "press.downloads.item7.size": {
+      "ctx": "다운로드 카드 사양 (PDF · 언어 약어 KR/EN/SC)",
+      "ko": "",
+      "en": "PDF · KR / EN / SC",
+      "zh": ""
+    },
+    "press.downloads.item7.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Press Release",
+      "zh": ""
+    },
+    "press.downloads.item8.size": {
+      "ctx": "다운로드 카드 사양. 'short · long' 번역",
+      "ko": "",
+      "en": "PDF · short · long",
+      "zh": ""
+    },
+    "press.downloads.item8.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Game Description",
+      "zh": ""
+    },
+    "press.downloads.item9.size": {
+      "ctx": "다운로드 카드 사양. 'studio profile' 번역",
+      "ko": "",
+      "en": "PDF · studio profile",
+      "zh": ""
+    },
+    "press.downloads.item9.title": {
+      "ctx": "다운로드 카드 제목",
+      "ko": "",
+      "en": "Download Company Description",
+      "zh": ""
+    },
+    "press.downloads.kicker": {
+      "ctx": "다운로드 키커: '/ assets ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ assets · 다운로드",
+      "en": "",
+      "zh": ""
+    },
+    "press.downloads.lede": {
+      "ctx": "다운로드 섹션 설명문 (한국어, 'Google Drive' 브랜드 유지)",
+      "ko": "아래 자료는 Google Drive 링크로 연결될 예정입니다. 현재는 자리표시용 링크로 표시됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.downloads.openDrive": {
+      "ctx": "다운로드 카드 링크 ('→' 글리프는 유지, 'Open drive'만 번역)",
+      "ko": "",
+      "en": "Open drive →",
+      "zh": ""
+    },
+    "press.factsheet.downloadKeyArt": {
+      "ctx": "키 비주얼 옆 고스트 버튼 (다운로드 카드 title과 동일 문구)",
+      "ko": "",
+      "en": "Download Key Art",
+      "zh": ""
+    },
+    "press.factsheet.heading": {
+      "ctx": "팩트시트 섹션 제목",
+      "ko": "",
+      "en": "Game Factsheet",
+      "zh": ""
+    },
+    "press.factsheet.keyVisualAlt": {
+      "ctx": "팩트시트 키 비주얼 이미지 alt. 'Revenant Survivors' 고정 브랜드",
+      "ko": "",
+      "en": "Revenant Survivors key visual",
+      "zh": ""
+    },
+    "press.factsheet.kicker": {
+      "ctx": "팩트시트 키커 (영문 단독)",
+      "ko": "",
+      "en": "/ factsheet",
+      "zh": ""
+    },
+    "press.factsheet.label.contact": {
+      "ctx": "팩트시트 연락처 항목 라벨 (dt). 값은 이메일 주소이므로 미번역",
+      "ko": "",
+      "en": "Contact",
+      "zh": ""
+    },
+    "press.factsheet.label.developer": {
+      "ctx": "팩트시트 항목 라벨 (dt)",
+      "ko": "",
+      "en": "Developer",
+      "zh": ""
+    },
+    "press.factsheet.label.gameTitle": {
+      "ctx": "팩트시트 항목 라벨 (dt)",
+      "ko": "",
+      "en": "Game Title",
+      "zh": ""
+    },
+    "press.factsheet.label.price": {
+      "ctx": "팩트시트 항목 라벨 (dt). 값 'TBA'는 약어로 미번역",
+      "ko": "",
+      "en": "Price",
+      "zh": ""
+    },
+    "press.factsheet.label.publisher": {
+      "ctx": "팩트시트 항목 라벨 (dt)",
+      "ko": "",
+      "en": "Publisher",
+      "zh": ""
+    },
+    "press.factsheet.label.releaseDate": {
+      "ctx": "팩트시트 항목 라벨 (dt)",
+      "ko": "",
+      "en": "Release Date",
+      "zh": ""
+    },
+    "press.factsheet.value.genre": {
+      "ctx": "팩트시트 장르 값 (dd)",
+      "ko": "",
+      "en": "Action Horde Survival Roguelite",
+      "zh": ""
+    },
+    "press.factsheet.value.languages": {
+      "ctx": "팩트시트 지원 언어 값 (dd). 각 언어명은 해당 스크립트 유지, '·' 구분 유지",
+      "ko": "한국어 · English · 简体中文",
+      "en": "",
+      "zh": ""
+    },
+    "press.factsheet.value.releaseDate": {
+      "ctx": "팩트시트 출시일 값 (dd). 'Coming Soon' 포함, 'TBA' 약어 유지",
+      "ko": "",
+      "en": "Coming Soon · TBA",
+      "zh": ""
+    },
+    "press.factsheet.value.status": {
+      "ctx": "팩트시트 상태 값 (dd)",
+      "ko": "",
+      "en": "In Development",
+      "zh": ""
+    },
+    "press.hero.headline": {
+      "ctx": "히어로 대제목. 'Revenant Survivors'는 고정 브랜드, 'Press Kit.'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors Press Kit.",
+      "zh": ""
+    },
+    "press.hero.kicker": {
+      "ctx": "히어로 키커: '/ press kit ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ press kit · 보도자료",
+      "en": "",
+      "zh": ""
+    },
+    "press.hero.lede": {
+      "ctx": "히어로 설명문 (영문 + 한국어 혼합, '—' 구분 유지)",
+      "ko": "Official materials for media, creators, and partners. — 미디어, 크리에이터, 파트너를 위한 공식 자료 모음입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.heading": {
+      "ctx": "문의처 섹션 제목 ('&'는 &amp;로 인코딩됨, 'Press'는 일반 단어)",
+      "ko": "",
+      "en": "Press & partner contacts",
+      "zh": ""
+    },
+    "press.inquiry.kicker": {
+      "ctx": "문의처 키커: '/ inquiry ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ inquiry · 문의처",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.lede": {
+      "ctx": "문의처 섹션 설명문 (한국어)",
+      "ko": "필요한 문의 종류에 맞는 메일 주소로 연락해주세요. 가능한 빠르게 답장드립니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.no01.num": {
+      "ctx": "문의 카드 번호 (키커). 'No.' 라벨, 숫자 유지",
+      "ko": "",
+      "en": "No.01",
+      "zh": ""
+    },
+    "press.inquiry.no01.title": {
+      "ctx": "문의 카드 제목",
+      "ko": "",
+      "en": "General Contact",
+      "zh": ""
+    },
+    "press.inquiry.no01.uses": {
+      "ctx": "문의 카드 용도 설명 (한국어, '·' 구분 및 '—' 유지)",
+      "ko": "일반 문의 · 홈페이지 문의 · 기타 문의 — 어디로 보내야 할지 모를 땐 이쪽으로.",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.no02.num": {
+      "ctx": "문의 카드 번호 (키커). 'No.' 라벨, 숫자 유지",
+      "ko": "",
+      "en": "No.02",
+      "zh": ""
+    },
+    "press.inquiry.no02.title": {
+      "ctx": "문의 카드 제목 ('/' 구분 유지)",
+      "ko": "",
+      "en": "Press / Media",
+      "zh": ""
+    },
+    "press.inquiry.no02.uses": {
+      "ctx": "문의 카드 용도 설명 (한국어, 'Press Kit' 브랜드 토큰 유지)",
+      "ko": "미디어 문의 · 보도자료 문의 · 기사 게재 문의 · Press Kit 관련 문의.",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.no03.num": {
+      "ctx": "문의 카드 번호 (키커). 'No.' 라벨, 숫자 유지",
+      "ko": "",
+      "en": "No.03",
+      "zh": ""
+    },
+    "press.inquiry.no03.title": {
+      "ctx": "문의 카드 제목",
+      "ko": "",
+      "en": "Creator Inquiry",
+      "zh": ""
+    },
+    "press.inquiry.no03.uses": {
+      "ctx": "문의 카드 용도 설명 (한국어, '·' 및 '/' 구분 유지)",
+      "ko": "크리에이터 문의 · 게임 키 요청 · 스트리밍 / 영상 제작 문의.",
+      "en": "",
+      "zh": ""
+    },
+    "press.inquiry.no04.num": {
+      "ctx": "문의 카드 번호 (키커). 'No.' 라벨, 숫자 유지",
+      "ko": "",
+      "en": "No.04",
+      "zh": ""
+    },
+    "press.inquiry.no04.title": {
+      "ctx": "문의 카드 제목",
+      "ko": "",
+      "en": "Business",
+      "zh": ""
+    },
+    "press.inquiry.no04.uses": {
+      "ctx": "문의 카드 용도 설명 (한국어, 'B2B' 약어 유지, '·' 구분 유지)",
+      "ko": "비즈니스 문의 · 퍼블리셔 문의 · 파트너십 · 행사 · B2B · 투자 · 협업 문의.",
+      "en": "",
+      "zh": ""
+    },
+    "press.screenLabel": {
+      "ctx": "화면 라벨 (data-screen-label, CSS로 표시). 'Press Kit'만 번역, '04' 숫자 유지",
+      "ko": "",
+      "en": "04 Press Kit",
+      "zh": ""
+    },
+    "press.screenshots.download": {
+      "ctx": "스크린샷 다운로드 버튼 (뒤에 화살표 글리프). 다운로드 카드 title과 동일 문구",
+      "ko": "",
+      "en": "Download Screenshots",
+      "zh": ""
+    },
+    "press.screenshots.heading": {
+      "ctx": "스크린샷 섹션 제목",
+      "ko": "",
+      "en": "Screenshot preview",
+      "zh": ""
+    },
+    "press.screenshots.kicker": {
+      "ctx": "스크린샷 키커: '/ screenshots ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ screenshots · 스크린샷",
+      "en": "",
+      "zh": ""
+    },
+    "press.screenshots.lede": {
+      "ctx": "스크린샷 섹션 설명문 (한국어)",
+      "ko": "키 비주얼과 곧 추가될 인게임 스크린샷의 자리표시. 클릭으로 확대됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.screenshots.tile.02": {
+      "ctx": "갤러리 자리표시 타일 라벨. 'Screenshot'만 번역, '· 02' 번호 유지",
+      "ko": "",
+      "en": "Screenshot · 02",
+      "zh": ""
+    },
+    "press.screenshots.tile.03": {
+      "ctx": "갤러리 자리표시 타일 라벨. 'Screenshot'만 번역, '· 03' 번호 유지",
+      "ko": "",
+      "en": "Screenshot · 03",
+      "zh": ""
+    },
+    "press.screenshots.tile.04": {
+      "ctx": "갤러리 자리표시 타일 라벨 (GIF 약어 유지, '· 04' 번호 유지)",
+      "ko": "",
+      "en": "GIF · 04",
+      "zh": ""
+    },
+    "press.screenshots.tile.05": {
+      "ctx": "갤러리 자리표시 타일 라벨. 'Screenshot'만 번역, '· 05' 번호 유지",
+      "ko": "",
+      "en": "Screenshot · 05",
+      "zh": ""
+    },
+    "press.screenshots.tile.06": {
+      "ctx": "갤러리 자리표시 타일 라벨. 'Screenshot'만 번역, '· 06' 번호 유지",
+      "ko": "",
+      "en": "Screenshot · 06",
+      "zh": ""
+    },
+    "press.screenshots.tile.keyVisual": {
+      "ctx": "갤러리 타일 라벨 (이미지 alt로 렌더)",
+      "ko": "",
+      "en": "Key visual",
+      "zh": ""
+    },
+    "press.studio.body1": {
+      "ctx": "스튜디오 소개 본문 1 (한국어, 'Mongma Studio' 브랜드 유지)",
+      "ko": "Mongma Studio는 한국 서울에 자리 잡은 작은 인디 게임 스튜디오입니다. 큰 회사의 공식과 트렌드 대신, 손으로 다듬은 시스템과 분위기 있는 세계를 만드는 것에 집중합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.studio.body2": {
+      "ctx": "스튜디오 소개 본문 2 (한국어, 'Revenant Survivors' 브랜드는 강조 처리되어 유지)",
+      "ko": "현재 첫 번째 프로젝트인 Revenant Survivors를 개발 중이며, 이후로도 한 가지 장르에 묶이지 않는 다양한 작품을 천천히 이어갈 예정입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "press.studio.heading": {
+      "ctx": "스튜디오 소개 제목. 'Mongma Studio' 고정 브랜드, 'About'만 번역",
+      "ko": "",
+      "en": "About Mongma Studio",
+      "zh": ""
+    },
+    "press.studio.kicker": {
+      "ctx": "스튜디오 소개 키커: '/ studio description ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ studio description · 스튜디오 소개",
+      "en": "",
+      "zh": ""
+    },
+    "press.trailer.downloadVideo": {
+      "ctx": "트레일러 고스트 버튼",
+      "ko": "",
+      "en": "Download Video Files",
+      "zh": ""
+    },
+    "press.trailer.heading": {
+      "ctx": "트레일러 섹션 제목",
+      "ko": "",
+      "en": "Official trailer",
+      "zh": ""
+    },
+    "press.trailer.iframeTitle": {
+      "ctx": "유튜브 iframe title 속성. 'Revenant Survivors' 고정 브랜드, 'Trailer'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors Trailer",
+      "zh": ""
+    },
+    "press.trailer.kicker": {
+      "ctx": "트레일러 키커: '/ trailer ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ trailer · 비디오",
+      "en": "",
+      "zh": ""
+    },
+    "press.trailer.lede": {
+      "ctx": "트레일러 섹션 설명문 (한국어)",
+      "ko": "미디어 사용 가능한 공식 트레일러. 보도용 캡처 컷도 함께 제공될 예정입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.community.ariaLabel": {
+      "ctx": "커뮤니티 섹션 aria-label. 브랜드 'Revenant' 고정, 'community'만 번역",
+      "ko": "",
+      "en": "Revenant community",
+      "zh": ""
+    },
+    "revenant.community.h2": {
+      "ctx": "커뮤니티 섹션 H2",
+      "ko": "",
+      "en": "Walk with us.",
+      "zh": ""
+    },
+    "revenant.community.kicker": {
+      "ctx": "커뮤니티 섹션 키커: '/ community ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ community · 커뮤니티",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.card1.description": {
+      "ctx": "기능 카드1 설명",
+      "ko": "적을 처치할 때마다 영혼을 흡수해 점점 더 강해집니다. 모든 죽음이 다음 한 발의 거름이 됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.card2.description": {
+      "ctx": "기능 카드2 설명",
+      "ko": "보스를 쓰러뜨리면 그들의 핵심 능력을 빼앗아 사용할 수 있습니다. 매 런마다 다른 손, 다른 검.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.card3.description": {
+      "ctx": "기능 카드3 설명",
+      "ko": "속성과 스킬을 쌓아 폭발적인 연쇄 반응을 일으키세요. 화면이 무너질 때 비로소 시작입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.card4.description": {
+      "ctx": "기능 카드4 설명",
+      "ko": "매 선택이 빌드를 흔듭니다. 정해진 정답 없이, 매번 새로 손에 익는 캐릭터를 만드세요.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.h2": {
+      "ctx": "핵심 시스템 섹션 H2. 'of the night.' 부분은 이탤릭 세리프",
+      "ko": "",
+      "en": "Four pillars of the night.",
+      "zh": ""
+    },
+    "revenant.features.kicker": {
+      "ctx": "핵심 시스템 섹션 키커: '/ features ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ features · 핵심 시스템",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.features.lede": {
+      "ctx": "핵심 시스템 섹션 리드 문장",
+      "ko": "한 줄로 설명할 수 있는 시스템 네 가지. 그 위에 모든 빌드와 캐릭터가 쌓입니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.gallery.h2": {
+      "ctx": "스크린샷 섹션 H2. 'from the run.' 부분은 이탤릭 세리프",
+      "ko": "",
+      "en": "Sights from the run.",
+      "zh": ""
+    },
+    "revenant.gallery.imageAltFallback": {
+      "ctx": "갤러리 이미지 alt 기본값(라벨 없을 때 폴백)",
+      "ko": "",
+      "en": "Gallery image",
+      "zh": ""
+    },
+    "revenant.gallery.keyArtAlt": {
+      "ctx": "갤러리 키아트 이미지 alt. 브랜드 'Revenant Survivors' 고정, 'key art'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors key art",
+      "zh": ""
+    },
+    "revenant.gallery.kicker": {
+      "ctx": "스크린샷 섹션 키커: '/ gallery ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ gallery · 스크린샷",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.gallery.lede": {
+      "ctx": "스크린샷 섹션 리드 문장",
+      "ko": "키 비주얼과 곧 추가될 인게임 스크린샷 자리. 클릭하면 라이트박스로 열립니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.gallery.tile02": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨: 'Screenshot ·' 형식 유지, 번호 유지",
+      "ko": "",
+      "en": "Screenshot · 02",
+      "zh": ""
+    },
+    "revenant.gallery.tile03": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨",
+      "ko": "",
+      "en": "Screenshot · 03",
+      "zh": ""
+    },
+    "revenant.gallery.tile04": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨: 'GIF'/번호 유지, 'Boss'만 번역",
+      "ko": "",
+      "en": "GIF · Boss · 04",
+      "zh": ""
+    },
+    "revenant.gallery.tile05": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨",
+      "ko": "",
+      "en": "Screenshot · 05",
+      "zh": ""
+    },
+    "revenant.gallery.tile06": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨: 'GIF'/번호 유지, 'Synergy'만 번역",
+      "ko": "",
+      "en": "GIF · Synergy · 06",
+      "zh": ""
+    },
+    "revenant.gallery.tile07": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨",
+      "ko": "",
+      "en": "Screenshot · 07",
+      "zh": ""
+    },
+    "revenant.gallery.tile08": {
+      "ctx": "갤러리 플레이스홀더 타일 라벨",
+      "ko": "",
+      "en": "Screenshot · 08",
+      "zh": ""
+    },
+    "revenant.hero.iconAlt": {
+      "ctx": "히어로 아이콘 alt. 브랜드 'Revenant'는 고정, 'icon'만 번역",
+      "ko": "",
+      "en": "Revenant icon",
+      "zh": ""
+    },
+    "revenant.overview.h2": {
+      "ctx": "게임 정보 섹션 H2. 'about stealing the dark.' 부분은 이탤릭 세리프",
+      "ko": "",
+      "en": "A roguelite about stealing the dark.",
+      "zh": ""
+    },
+    "revenant.overview.kicker": {
+      "ctx": "게임 정보 섹션 키커: '/ overview ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ overview · 게임 정보",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.overview.lede": {
+      "ctx": "게임 정보 섹션 리드 문장",
+      "ko": "보스를 쓰러뜨리는 것이 끝이 아니라 시작입니다. 그들의 힘과 기술을 그대로 빼앗아, 다음 보스 앞에 또 다른 자신으로 마주서세요.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.press.h2": {
+      "ctx": "미디어 자료 섹션 H2 (&amp;는 '&'로 렌더)",
+      "ko": "",
+      "en": "For media, creators & partners.",
+      "zh": ""
+    },
+    "revenant.press.kicker": {
+      "ctx": "미디어 자료 섹션 키커: '/ press ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ press · 미디어용 자료",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.press.lede": {
+      "ctx": "미디어 자료 섹션 리드 문장",
+      "ko": "로고, 키 비주얼, 스크린샷, 트레일러, 보도자료까지. 한 곳에서 받아볼 수 있도록 정리했습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.steam.followOnSteam": {
+      "ctx": "버튼: Steam 팔로우. 브랜드 'Steam' 고정, 'Follow on'만 번역",
+      "ko": "",
+      "en": "Follow on Steam",
+      "zh": ""
+    },
+    "revenant.steam.h2": {
+      "ctx": "위시리스트 섹션 H2. 'Steam'은 브랜드 고정, 문장 번역",
+      "ko": "",
+      "en": "Stand on Steam, before the night begins.",
+      "zh": ""
+    },
+    "revenant.steam.kicker": {
+      "ctx": "위시리스트 섹션 키커: '/ wishlist ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ wishlist · 위시리스트",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.steam.lede": {
+      "ctx": "위시리스트 섹션 리드 문장",
+      "ko": "위시리스트는 인디 게임에게 가장 큰 응원입니다. 출시 직전, 가장 먼저 알려드릴게요.",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.trailer.h2": {
+      "ctx": "트레일러 섹션 H2. 'into the night.' 부분은 이탤릭 세리프 스타일",
+      "ko": "",
+      "en": "First Look into the night.",
+      "zh": ""
+    },
+    "revenant.trailer.iframeTitle": {
+      "ctx": "YouTube iframe title. 브랜드 'Revenant Survivors' 고정, 'Trailer'만 번역",
+      "ko": "",
+      "en": "Revenant Survivors Trailer",
+      "zh": ""
+    },
+    "revenant.trailer.kicker": {
+      "ctx": "트레일러 섹션 키커: '/ trailer ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ trailer · 트레일러",
+      "en": "",
+      "zh": ""
+    },
+    "revenant.trailer.lede": {
+      "ctx": "트레일러 섹션 리드 문장",
+      "ko": "짧은 트레일러 한 편. 분위기, 보스, 그리고 영혼 흡수의 첫 장면.",
+      "en": "",
+      "zh": ""
+    },
+    "support.hero.headline": {
+      "ctx": "히어로 영문 디스플레이 헤드라인, 'we are building.' 부분 이탤릭 강조",
+      "ko": "",
+      "en": "Support the worlds we are building.",
+      "zh": ""
+    },
+    "support.hero.kicker": {
+      "ctx": "히어로 키커: '/ support ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ support · 후원",
+      "en": "",
+      "zh": ""
+    },
+    "support.hero.lede": {
+      "ctx": "히어로 본문 리드 문단(한국어)",
+      "ko": "몽마 스튜디오가 더 자유롭고 개성 있는 게임을 만들 수 있도록 응원해 주세요. 큰 후원이 아니어도, 작은 응원 하나하나가 다음 한 페이지를 그릴 시간을 만들어 줍니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.note.label": {
+      "ctx": "하단 디스클레이머 강조 라벨: 'Note ·' (· 구분자 유지)",
+      "ko": "",
+      "en": "Note · ",
+      "zh": ""
+    },
+    "support.note.stamp": {
+      "ctx": "하단 디스클레이머 스탬프 문구(영문, · 구분자 유지)",
+      "ko": "",
+      "en": "Honest · Indie · Slow",
+      "zh": ""
+    },
+    "support.note.text": {
+      "ctx": "하단 디스클레이머 본문(영문 문장 + 한국어 혼합). 앞 영문 안내문 뒤에 한국어 안내가 이어짐, 전체 번역",
+      "ko": "Support options and payment links will be connected later. 결제 · 정기 후원 등의 기능은 정식 후원 페이지가 준비되는 대로 천천히 추가됩니다. 무리한 후원이 아닌, 가장 편안한 형태로 응원해 주세요.",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.a.desc": {
+      "ctx": "후원 옵션 A 설명(한국어)",
+      "ko": "한 번의 응원으로 다음 작품의 한 챕터를 함께 만들어 주세요. 후원자 명단(선택)도 곧 준비됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.a.num": {
+      "ctx": "후원 옵션 A 번호+라벨: 'A ·' 접두 고정, 'Personal'만 번역",
+      "ko": "",
+      "en": "A · Personal",
+      "zh": ""
+    },
+    "support.options.a.title": {
+      "ctx": "후원 옵션 A 제목",
+      "ko": "",
+      "en": "One-time support",
+      "zh": ""
+    },
+    "support.options.b.desc": {
+      "ctx": "후원 옵션 B 설명(한국어)",
+      "ko": "스트리머 / 영상 크리에이터를 위한 게임 키, 자료 패키지, 협업 안내를 준비하고 있습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.b.num": {
+      "ctx": "후원 옵션 B 번호+라벨: 'B ·' 접두 고정, 'Creator'만 번역",
+      "ko": "",
+      "en": "B · Creator",
+      "zh": ""
+    },
+    "support.options.b.title": {
+      "ctx": "후원 옵션 B 제목",
+      "ko": "",
+      "en": "Creator support",
+      "zh": ""
+    },
+    "support.options.c.desc": {
+      "ctx": "후원 옵션 C 설명(한국어)",
+      "ko": "퍼블리싱 · 파트너십 · 투자 · 행사 협업 등은 비즈니스 메일로 연락 주시면 빠르게 검토하겠습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.c.num": {
+      "ctx": "후원 옵션 C 번호+라벨: 'C ·' 접두 고정, 'Industry'만 번역",
+      "ko": "",
+      "en": "C · Industry",
+      "zh": ""
+    },
+    "support.options.c.title": {
+      "ctx": "후원 옵션 C 제목",
+      "ko": "",
+      "en": "Publisher / investor inquiry",
+      "zh": ""
+    },
+    "support.options.d.desc": {
+      "ctx": "후원 옵션 D 설명(한국어)",
+      "ko": "위시리스트, 디스코드, 영상 공유. 돈이 들지 않는 응원도 같은 무게로 큰 힘이 됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.d.num": {
+      "ctx": "후원 옵션 D 번호+라벨: 'D ·' 접두 고정, 'Together'만 번역",
+      "ko": "",
+      "en": "D · Together",
+      "zh": ""
+    },
+    "support.options.d.title": {
+      "ctx": "후원 옵션 D 제목",
+      "ko": "",
+      "en": "Community support",
+      "zh": ""
+    },
+    "support.options.heading": {
+      "ctx": "섹션 제목(영문)",
+      "ko": "",
+      "en": "Support options",
+      "zh": ""
+    },
+    "support.options.kicker": {
+      "ctx": "섹션 키커: '/ ways to support ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ ways to support · 후원 방식",
+      "en": "",
+      "zh": ""
+    },
+    "support.options.lede": {
+      "ctx": "섹션 리드 문단(한국어)",
+      "ko": "현재는 안내 위주입니다. 결제 / 후원 링크는 정식 페이지가 준비되는 대로 차근차근 연결됩니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.card1.desc": {
+      "ctx": "왜 후원 카드1 설명(한국어)",
+      "ko": "외부 자본에 휘둘리지 않고, 한 작품 한 작품 우리 손으로 마무리할 수 있습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.card1.num": {
+      "ctx": "왜 후원 카드1 번호+라벨: '01 ·' 접두는 고정, 'Studio'만 번역",
+      "ko": "",
+      "en": "01 · Studio",
+      "zh": ""
+    },
+    "support.why.card1.title": {
+      "ctx": "왜 후원 카드1 제목",
+      "ko": "",
+      "en": "Small independent studio",
+      "zh": ""
+    },
+    "support.why.card2.desc": {
+      "ctx": "왜 후원 카드2 설명(한국어)",
+      "ko": "유행 추격이 아닌, 우리만의 세계와 시스템을 만들 시간을 확보합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.card2.num": {
+      "ctx": "왜 후원 카드2 번호+라벨: '02 ·' 접두 고정, 'Originality'만 번역",
+      "ko": "",
+      "en": "02 · Originality",
+      "zh": ""
+    },
+    "support.why.card2.title": {
+      "ctx": "왜 후원 카드2 제목",
+      "ko": "",
+      "en": "Original game development",
+      "zh": ""
+    },
+    "support.why.card3.desc": {
+      "ctx": "왜 후원 카드3 설명(한국어)",
+      "ko": "여러분의 피드백이 다음 빌드의 방향과 디테일을 함께 결정합니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.card3.num": {
+      "ctx": "왜 후원 카드3 번호+라벨: '03 ·' 접두 고정, 'Community'만 번역",
+      "ko": "",
+      "en": "03 · Community",
+      "zh": ""
+    },
+    "support.why.card3.title": {
+      "ctx": "왜 후원 카드3 제목",
+      "ko": "",
+      "en": "Community-driven feedback",
+      "zh": ""
+    },
+    "support.why.card4.desc": {
+      "ctx": "왜 후원 카드4 설명(한국어)",
+      "ko": "플레이 가능한 데모, 개발 노트, 비공개 빌드 등을 더 적극적으로 공유할 수 있습니다.",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.card4.num": {
+      "ctx": "왜 후원 카드4 번호+라벨: '04 ·' 접두 고정, 'Future'만 번역",
+      "ko": "",
+      "en": "04 · Future",
+      "zh": ""
+    },
+    "support.why.card4.title": {
+      "ctx": "왜 후원 카드4 제목",
+      "ko": "",
+      "en": "Future demos & devlogs",
+      "zh": ""
+    },
+    "support.why.heading": {
+      "ctx": "섹션 제목(영문)",
+      "ko": "",
+      "en": "Why support us?",
+      "zh": ""
+    },
+    "support.why.kicker": {
+      "ctx": "섹션 키커: '/ why support ·' 슬래시 스타일 유지, 설명만 번역",
+      "ko": "/ why support · 왜 후원인가요?",
+      "en": "",
+      "zh": ""
+    },
+    "support.why.lede": {
+      "ctx": "섹션 리드 문단(한국어)",
+      "ko": "우리는 마케팅 예산도, 광고도 없는 작은 팀입니다. 응원의 형태가 곧 다음 작품의 가능성이 됩니다.",
+      "en": "",
+      "zh": ""
+    }
+  }
+}
